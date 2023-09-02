@@ -1,6 +1,13 @@
 # 介绍
 分享一款用于分析`iOS`ipa包的脚本工具，使用此工具可以`自动扫描发现`待修复的包体积问题，同时可以生成包体积数据用于查看。这块工具我们内部已经使用很长一段时间，希望可以帮助到更多的开发同学更加效率的优化包体积问题。
 
+ [工具下载地址](https://github.com/helele90/APPAnalyze)
+
+# 实现方式
+我们选择了不依赖源码而是直接扫描二进制库的方式来实现这个能力，总体的执行流程一下：
+![执行流程.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9d9a974291e4d76a6b9d7d528ab1377~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2818&h=1702&s=262212&e=png&b=ffffff)
+> 提示：基于组件化工程的扫描方式内部支持，只是暂时不对外开放。
+
 # 使用指南
 
 ## 安装
@@ -224,9 +231,14 @@ APP`启动`后会执行所有`+load`方法，减少`+load`方法可以降低启�
 #### systemFrameworkPaths
 可以基于自身项目进行系统库目录的配置，解析工程时也会对系统库进行解析。配置系统库目录对于未使用方法的查找可以提供更多的信息避免误报。但是配置更多会导致执行的更慢，建议至少配置`Foundation`/`UIKit`。
 #### unusedObjCProperty-enable
-开启未使用属性检查以后，会扫描`macho`的`__TEXT`段，会增加分析的耗时。
+`unusedObjCProperty`规则默认不开启。
+- 开启未使用属性检查以后，会扫描`macho`的`__TEXT`段，会增加分析的耗时。
 #### unusedClass-swiftEnable
-开启`Swift`类检查以后，会扫描`macho`的`__TEXT`段，会增加分析的耗时。如果考虑执行性能的话建议`Swift`使用相对比较多的再开启。
+`unusedClass-swiftEnable`默认不开启。
+- 开启`Swift`类检查以后，会扫描`macho`的`__TEXT`段，会增加分析的耗时。
+- 未使用`Swift`类的项目建议不要开启，如果考虑执行性能的话`Swift`使用相对比较多的再开启。
+
+> 提示：扫描`macho`的`__TEXT`段需要使用`XCode`Run编译出的包，不能直接使用用于上架`APP Store`构建出的包。主要是`Debug`会包含更多的信息用于扫描。
 
 ### 配置属性
 ``` shell
