@@ -1,3 +1,10 @@
+---
+theme: cyanosis
+---
+
+# 介绍
+分享一款用于分析`iOS`ipa包的脚本工具，使用此工具可以`自动扫描发现`待修复的包体积问题，同时可以生成包体积数据用于查看。这块工具我们内部已经使用很长一段时间，希望可以帮助到更多的开发同学更加效率的优化包体积问题。
+
 # 使用指南
 
 ## 安装
@@ -215,9 +222,17 @@ APP`启动`后会执行所有`+load`方法，减少`+load`方法可以降低启�
 - 移除`+load`方法
 - 使用`+initialize`替代
 
-## 配置
+## 自定义配置
 
-### 自定义配置
+### 重要配置
+#### systemFrameworkPaths
+可以基于自身项目进行系统库目录的配置，解析工程时也会对系统库进行解析。配置系统库目录对于未使用方法的查找可以提供更多的信息避免误报。但是配置更多会导致执行的更慢，建议至少配置`Foundation`/`UIKit`。
+#### unusedObjCProperty-enable
+开启未使用属性检查以后，会扫描`macho`的`__TEXT`段，会增加分析的耗时。
+#### unusedClass-swiftEnable
+开启`Swift`类检查以后，会扫描`macho`的`__TEXT`段，会增加分析的耗时。如果考虑执行性能的话建议`Swift`使用相对比较多的再开启。
+
+### 配置属性
 ``` shell
 APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /Users/Desktop/ipas/config.json --output /Users/Desktop/ipas/APPMobile
 ```
@@ -228,11 +243,11 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 {
     "systemFrameworkPaths": ["/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore", "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
         "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Foundation.framework/Foundation"
-    ],
+    ], // 配置系统库。会极大增加未使用方法的误报
     "rules": {
         "dynamicCallObjCClass": { // 动态调`ObjC类
-            "enable": false,
-            "excludeClasslist": [
+            "enable": false, // 是否启用
+            "excludeClasslist": [ // 过滤类名
                 "NSObject",
                 "param"
             ]
@@ -279,6 +294,13 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 
 ## 扫描质量如何
 这套工具我们内部开发加逐步完善有一年的时间了。我们基于此工具修改了几十个组件的包体积问题，同时不断的修复误报问题。目前现有提供的这些规则检查误报率是很低的，只有极少数几个规则可能存在误报的可能性，总体扫描质量还是很高的。
+
+## 和业界开源的工具有什么差异
+我们在早期也是调研了业界的几个其他工具，我觉得主要存在以下几个问题：
+- `扩展性不够` - 无法支持项目更好的扩展定制能力
+- `功能不全` - 只提供部分能力，例如`未使用资源`/`未使用类`。
+- `无法生成包体积数据` - 无法生成包体积完整的数据。
+- `检查质量不高` - 扫描发现的错误数据多，或者有一些问题不能被发现。
 
 ## 开源计划
 后续一定会开源。最近刚做完一定的代码重构，然后准备申请公司的开源流程。
