@@ -346,3 +346,6 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 # 相关链接
 - [京东京喜 iOS 包体积分析工具](https://juejin.cn/spost/7273740834201600063)
 - [Github地址](https://github.com/helele90/APPAnalyze)
+
+# 反馈微信群
+![F3956610-F1D3-4945-BD33-9AC852A668CA.jpg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2f313332be1849c1a9aec248db1f69de~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=930&h=1482&s=216863&e=jpg&b=fdfdfd)
