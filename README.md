@@ -27,6 +27,7 @@ OPTIONS:
 ```
 ### 执行
 打开终端程序直接执行以下`shell`指令，即可生成`ipa`的包体积数据以及包体积待修复问题。
+> 提示：不能直接使用`AppStore`的包，`AppStore`的包需要砸壳。建议尽量使用XCode`Debug`的包。
 ``` shell
 APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 ```
