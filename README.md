@@ -43,6 +43,7 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - `framework_size.html` - 展示单个`framework`所有的包体积数据，`二级页面不要直接打开`。
 
 ![截屏2023-09-02 16.48.52.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7faf9663980d4b1f95f982ca16082fce~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=3176&h=1640&s=411654&e=png&b=fdfdfd)
+> 提示：`XCode`生成`Assets.car`时会将一些小图片拼接成一张`PackedAssetImage`的大图片。
 
 - `package_size.json` - `ipa`包体积 JSON 数据
 
@@ -115,14 +116,15 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 #### 未使用的类Property属性
 `ObjC`类中定义的属性没有被使用到。
 ##### 扫描规则
-- 对应的属性没有被调用 set/get 方法，同时也没有被`_`的方式使用。
+- 对应的属性没有被调用 set/get 方法，同时也没有被`_`的方式使用
 - 不是来自实现协议的属性
 - 不是来自`Category`的属性
+- 不存在字符串使用和属性名一致
 ##### 可选的修复方式
-- 移除对应的属性。
+- 移除对应的属性
 - 如果是接口协议的属性，需要添加类实现此接口
-
-> 提示：可能存在一定的误报，需要检查。
+##### `注意事项`
+- 可能存在部分动态使用的场景，需要进行一定的检查。例如一些继承`NSObject`的数据模型类，可能存在属性没有被直接使用到，但是可能会被传唤成`JSON`作为参数的情况。例如后台下发的数据模型
 
 #### 未使用的ImageSet/DataSet
 包含的`Imageset`/`DataSet`并没有被使用到。
@@ -130,8 +132,10 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - 未检测到和`Imageset`同样名字的字符串使用
 ##### 可选的修复方式
 - 移除ImageSet/DataSet
-
-> 提示：可能会存在一定误报，需要检查。例如1.某些使用的 Swift 字符串不能被发现所以会被当做未使用。2.使用字符串拼接的字符串作为 imageset的名字。
+##### `注意事项`
+- 某些`Swift`代码中使用的字符串不能被发现所以会被当做未使用。
+- 使用字符串拼接的名字作为imageset的名字。
+- 被合成到`PackedAssetImage`里的`Imageset`不能被扫描出来
 
 #### 未使用的ObjC方法
 定义的`ObjC`Category 方法并未被使用到。
@@ -153,6 +157,7 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - 不是来自实现接口的方法
 ##### 可选的修复方式
 - 移除未使用的方法
+- 如果是接口协议的方法，需要添加类实现此接口
 
 #### 未使用的资源文件
 包含的文件资源并没有被使用到。这里的资源不包含`Imageset`/`DataSet`。
@@ -160,7 +165,9 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - 未检测到和文件名同样名字的字符串使用
 ##### 可选的修复方式
 - 移除资源
-> 提示：可能会存在一定误报，例如1.某些使用的 Swift 字符串不能被发现所以会被当做未使用。2.使用字符串拼接的字符串作为 imageset的名字。
+##### `注意事项`
+- 某些`Swift`代码中使用的字符串不能被发现所以会被当做未使用
+- 使用字符串拼接的名字作为资源的名字
 
 ### 安全
 #### 动态反射调用ObjC类
@@ -169,7 +176,7 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - 存在使用的`字符串`和`NSObject子类`类名相同
 ##### 可选的修复方式
 - 使用`NSStringFromClass()`获取类名字符串
-- 使用`Framework`外部的类应该使用方法封装
+- 使用`Framework`外部的类应该使用方法封装，除了少部分功能不应该使用反射去调用`类`
 > 提示：包含继承`NSObject`的 swift 类。
 
 #### ObjC属性内存申明错误
@@ -306,8 +313,8 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 
 ## 和社区开源的工具有什么差异
 我们在早期调研了社区的几个同类型的开源工具，主要存在以下几个问题：
-- `扩展性不够` - 无法支持项目更好的扩展定制能力，例如添加扫描规则
-- `功能不全` - 只提供部分能力，例如`未使用资源`/`未使用类`。
+- `扩展性不够` - 无法支持项目更好的扩展定制能力，例如添加扫描规则。
+- `功能不全` - 只提供部分能力，例如只提供`未使用资源`或者`未使用类`。
 - `无法生成包体积数据` - 无法生成包体积完整的数据。
 - `检查质量不高` - 扫描发现的错误数据多，或者有一些问题不能被发现。
 
@@ -335,3 +342,7 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 - `未使用类` - 编译器不会对于未使用`class`进行移除，即使是继承`NSObject`的子类。
 - `未使用属性` - 编译器不会对于未使用`属性`进行移除，包括`class`和`struct`的属性。
 - `未使用方法` - 对于`class`的方法，编译器并不会进行移除，即使没有申明`@objc`进行消息派发。
+
+# 相关链接
+- [京东京喜 iOS 包体积分析工具](https://juejin.cn/spost/7273740834201600063)
+- [Github地址](https://github.com/helele90/APPAnalyze)
