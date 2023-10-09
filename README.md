@@ -349,4 +349,4 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 - [Github地址](https://github.com/helele90/APPAnalyze)
 
 # 反馈交流群
-![5048F337-8190-4F05-AEE6-2C331304DB4B.jpg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38b8aada2340421c827c705119f00382~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=930&h=1533&s=139446&e=jpg&b=fefefe)
+![486F9F16-614C-47B1-B379-37D26C7925FD.jpg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/44ba56edf6a643cdbee886a365679f44~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=930&h=1533&s=142342&e=jpg&b=fefefe)
