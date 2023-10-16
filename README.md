@@ -3,6 +3,19 @@
 
  [工具下载地址](https://github.com/helele90/APPAnalyze)
 
+## 背景
+`APPAnalyze`工具最早诞生主要是为了解决以下包体积管理的问题：
+
+对于定位下沉市场的`APP`来讲，包体积是一个非常重要的性能指标，包体积过大会影响用户下载`APP`的意愿。但是在早期我们缺少一些手段帮助我们更高效的去进行包体积管理。
+#### 自动发现问题
+- `提升效率` - 人工排查问题效率低，对于常见的问题尽可能自动扫描出来。并且对于`组件化`工程来讲，很多外部组件是通过`Framework`方式提供，没有仓库源码权限用于分析包体积问题。
+- `流程化` - 形成自动化的质量流程，添加到`CI流水线`自动发现包体积问题。
+
+#### 数据指标量化
+- `包体积问题` - 提供数据化平台查看每个组件的包体积`待修复`问题
+- `包体积大小` - 提供数据化平台查看每个组件的包体积占比，包括`总大小`，单个文件`二进制大小`和每个`资源大小`。可以针对不同的`APP`版本进行组件化粒度的包体积数据对比，更方便查看每个版本的组件大小增量。
+
+
 # 实现方式
 我们选择了不依赖源码而是直接扫描二进制库的方式来实现这个能力，总体的执行流程一下：
 ![执行流程.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9d9a974291e4d76a6b9d7d528ab1377~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2818&h=1702&s=262212&e=png&b=ffffff)
@@ -31,33 +44,41 @@ OPTIONS:
 ``` shell
 APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 ```
-> 提示：如果提示`permission denied`没有权限，执行`sudo chmod -R 777 /Users/a/Desktop/ipas/APPAnalyzeCommand`即可。
+> 提示：如果提示`permission denied`没有权限，执行`sudo chmod -R 777 /Users/a/Desktop/ipas/APPAnalyzeCommand`即可。双击`APPAnalyzeCommand`是否可以直接唤起终端程序。
 ### 生成产物
 ![截屏2023-09-02 16.15.12.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa71a13c996747089246d7c871cd6130~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=980&h=304&s=55650&e=png&a=1&b=fefefe)
 指令执行完成以后，会在`ouput`参数指定的文件夹生成`APPAnalyze`文件夹。具体文件介绍如下：
 #### 包体积信息
-- `app_size.html` - 展示`ipa`每个`framework`的包体积数据，可直接用浏览器打开。
+##### app_size.html
+展示`ipa`每个`framework`的包体积数据，可直接用浏览器打开。
 > 提示：按照主程序和动态库进行粒度划分
 
 ![截屏2023-09-02 16.48.41.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36db089d179345a8b39e6996b8903e0a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1588&h=862&s=129280&e=png&b=fdfdfd)
 
-- `framework_size.html` - 展示单个`framework`所有的包体积数据，`二级页面不要直接打开`。
+##### framework_size.html
+展示单个`framework`所有的包体积数据，`二级页面不要直接打开`。
 
 ![截屏2023-09-02 16.48.52.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7faf9663980d4b1f95f982ca16082fce~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=3176&h=1640&s=411654&e=png&b=fdfdfd)
-> 提示：`XCode`生成`Assets.car`时会将一些小图片拼接成一张`PackedAssetImage`的大图片。
+包体积数据有几个点需要注意：
+- `PackedAssetImage` - `XCode`生成`Assets.car`时会将一些小图片拼接成一张`PackedAssetImage`的大图片。
+- `imageset` - `imageset`的大小不一定等于原始图片的大小，这个大小是`XCode`编译时生成`Assets.car` 里这个 imageset 所占的体积。
 
-- `package_size.json` - `ipa`包体积 JSON 数据
+##### package_size.json
+`ipa`包体积 JSON 数据
 
 #### 包体积待修复问题
-- `app_issues.html` - 展示`ipa`每个`framework`的包体积待修复问题数量，可直接用浏览器打开。
+##### app_issues.html
+展示`ipa`每个`framework`的包体积待修复问题数量，可直接用浏览器打开。
 > 提示：按照主程序和动态库进行粒度划分
 ![截屏2023-09-02 16.48.23.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9040c099b3fc43b5b3772c28b2cde32d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1632&h=526&s=94734&e=png&b=fcfcfc)
 
-- `framework_issues.html` - 展示单个`framework`所有的待修复问题详细数据，`二级页面不要单独打开`。
+##### framework_issues.html
+展示单个`framework`所有的待修复问题详细数据，`二级页面不要单独打开`。
 
 
 ![截屏2023-09-02 16.48.34.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fefa328328674920832f7f7080254ac1~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=3582&h=1522&s=633102&e=png&b=fdfdfd)
-- `issues.json` - `ipa`待修复包体积问题 JSON 数据
+##### issues.json
+`ipa`待修复包体积问题 JSON 数据
 
 
 
@@ -121,6 +142,7 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - 不是来自实现协议的属性
 - 不是来自`Category`的属性
 - 不存在字符串使用和属性名一致
+- 属性是类对象类型。过滤了`基础类型`
 ##### 可选的修复方式
 - 移除对应的属性
 - 如果是接口协议的属性，需要添加类实现此接口
@@ -134,9 +156,10 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 ##### 可选的修复方式
 - 移除ImageSet/DataSet
 ##### `注意事项`
-- 某些`Swift`代码中使用的字符串不能被发现所以会被当做未使用。
-- 使用字符串拼接的名字作为imageset的名字。
-- 被合成到`PackedAssetImage`里的`Imageset`不能被扫描出来
+- 某些`Swift`代码中使用的字符串不能被发现所以不能正确扫描出来。
+- 使用字符串拼接的名字作为`imageset`的名字可能不能正确扫描出来。
+- 被合成到`PackedAssetImage`里的`Imageset`不能正确被扫描出来。
+- `xib`内使用的`Imageset`暂不支持，后续考虑支持。
 
 #### 未使用的ObjC方法
 定义的`ObjC`Category 方法并未被使用到。
@@ -168,7 +191,8 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 - 移除资源
 ##### `注意事项`
 - 某些`Swift`代码中使用的字符串不能被发现所以会被当做未使用
-- 使用字符串拼接的名字作为资源的名字
+- 使用字符串拼接的名字作为资源的名字可能不能正确扫描出来
+- `xib`内使用的`资源`暂不支持，后续考虑支持。
 
 ### 安全
 #### 动态反射调用ObjC类
@@ -306,7 +330,49 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 }
 
 ```
+可以通过`modules`配置支持组件化工程的扫描，可以基于自身项目的组件化工程生成对应的`json`组件化配置，之后进行扫描
+## 模块化扫描配置
+``` shell
+APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app --modules /Users/Desktop/ipas/modules.json --output /Users/Desktop/ipas/APPMobile
+```
 
+配置格式如下：
+``` json
+[{
+	"frameworks": [],
+	"libraries": [],
+	"resources": [],
+	"name": "APPModule",
+	"dependencies": ["OrderModule", "CartModule"],
+	"version": "1.1.0"
+}, {
+	"frameworks": ["/Users/test/AppModule/Example/Pods/OrderModule/OrderModule.framework"],
+	"libraries": [],
+	"resources": ["/Users/test/AppModule/Example/Pods/CartModule/Resources/Order.bundle"],
+	"name": "OrderModule",
+	"dependencies": ["JDUIKit"],
+	"version": "1.0.4"
+}, {
+	"frameworks": [],
+	"libraries": ["/Users/test/AppModule/Example/Pods/CartModule/CartModule.a"],
+	"resources": ["/Users/test/AppModule/Example/Pods/CartModule/Resources/Cart.xcassets"],
+	"name": "CartModule",
+	"dependencies": ["JDUIKit"],
+	"version": "1.0.5"
+}, {
+	"frameworks": ["/Users/test/AppModule/Example/Pods/JDUIKit/JDUIKit.framework"],
+	"libraries": [],
+	"resources": ["/Users/test/AppModule/Example/Pods/JDUIKit/Resources"],
+	"name": "JDUIKit",
+	"dependencies": [],
+	"version": "1.0.0"
+}]
+```
+基于组件化扫描方式有以下优势：
+- `细化数据粒度` - 可以细化每个模块的包体积和包体积问题，更容易进行包体积优化。 
+- `更多的检查` - 例如检查不同组件同一个`Bundle`包含同名的文件，不同组件包含同一个`category`方法的的实现。
+- `检查结果更准确` - 例如`ObjC`未使用方法的检查，只要存在一个和方法名同样的调用就表示方法有被使用到。但是整个`ipa`中可能存在很多一样的方法名但是只有一个方法有真正被调用到，如果细分到组件的粒度就可以发现更多问题。
+> 提示：只有APP主工程无代码，全部通过子组件以`framework`的形式导入二进制库的方式的工程才适合这种模式。
 # 其他
 
 ## 扫描质量如何
@@ -330,19 +396,17 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 ## 后续规划
 
 ### 组件化工程扫描
-近期打算优先支持基于组件化工程的扫描方式。计划提供一种通用的能力，可以通过配置包含所有组件信息（二进制/资源/依赖关系）的这样一个`json`文件来配置组件工程。 不过开源后也可以基于自身的需要来定制解析方式。
+添加一些组件化扫描相关的规则。
 
-基于组件化扫描方式有以下优势：
-- `细化数据粒度` - 可以细化每个模块的包体积和包体积问题，更容易进行包体积优化。 
-- `更多的检查` - 例如检查不同组件同一个`Bundle`包含同名的文件，不同组件包含同一个`category`方法的的实现。
-- `检查结果更准确` - 例如`ObjC`未使用方法的检查，只要存在一个和方法名同样的调用就表示方法有被使用到。但是整个`ipa`中可能存在很多一样的方法名但是只有一个方法有真正被调用到，如果细分到组件的粒度就可以发现更多问题。
-> 提示：只有APP主工程无代码，全部通过子组件以`framework`的形式导入二进制库的方式的工程才适合这种模式。
 
 ###  对于 Swift 更好的支持
 对于`Swift`语言只要开启`XCode`编译优化以后就能在生成产物的时候支持无用代码的移除，包括`未使用类型`和`未使用方法`的自动移除，但是依然有部分场景不会进行优化。所以这一块也是后续完善的重点：
 - `未使用类` - 编译器不会对于未使用`class`进行移除，即使是继承`NSObject`的子类。
 - `未使用属性` - 编译器不会对于未使用`属性`进行移除，包括`class`和`struct`的属性。
 - `未使用方法` - 对于`class`的方法，编译器并不会进行移除，即使没有申明`@objc`进行消息派发。
+
+# 相关链接
+- [Github地址](https://github.com/helele90/APPAnalyze)
 
 # 相关链接
 - [京东京喜 iOS 包体积分析工具](https://juejin.cn/spost/7273740834201600063)
