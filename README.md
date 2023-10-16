@@ -339,12 +339,12 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app --modules /Us
 配置格式如下：
 ``` json
 [{
-	"frameworks": [],
-	"libraries": [],
-	"resources": [],
-	"name": "APPModule",
-	"dependencies": ["OrderModule", "CartModule"],
-	"version": "1.1.0"
+	"frameworks": [], // framework文件路径
+	"libraries": [], // library文件路径
+	"resources": [], // 资源文件路径
+	"name": "APPModule", // 模块名
+	"dependencies": ["OrderModule", "CartModule"], // 模块子模块依赖
+	"version": "1.1.0" // 模块版本
 }, {
 	"frameworks": ["/Users/test/AppModule/Example/Pods/OrderModule/OrderModule.framework"],
 	"libraries": [],
