@@ -236,11 +236,7 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app --modules /Us
 - `未使用方法` - 对于`class`的方法，编译器并不会进行移除，即使没有申明`@objc`进行消息派发。
 
 # 相关链接
-- [Github地址](https://github.com/helele90/APPAnalyze)
-
-# 相关链接
 - [京东京喜 iOS 包体积分析工具](https://juejin.cn/spost/7273740834201600063)
-- [Github地址](https://github.com/helele90/APPAnalyze)
 
 # 反馈交流群
 
