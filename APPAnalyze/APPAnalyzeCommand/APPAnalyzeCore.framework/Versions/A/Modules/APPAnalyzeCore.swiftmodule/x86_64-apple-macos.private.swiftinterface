@@ -1,0 +1,454 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-macos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name APPAnalyzeCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import APPAnalyzeCore
+import CommonCrypto
+import Foundation
+import OSLog
+import Swift
+import SwiftDemangle
+import SwiftyJSON
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class Module {
+  public var name: Swift.String {
+    get
+  }
+  public var version: Swift.String? {
+    get
+  }
+  public var dependencies: Swift.Set<Swift.String> {
+    get
+  }
+  public var resource: APPAnalyzeCore.ComponentResource! {
+    get
+  }
+  public var allDependenciesCount: Swift.Int {
+    get
+  }
+  public var allDependencies: Swift.Set<Swift.String> {
+    get
+  }
+  public var libraries: [APPAnalyzeCore.MachO] {
+    get
+  }
+  public var parentDependencies: Swift.Set<Swift.String> {
+    get
+  }
+  public var mainModule: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+extension Swift.String {
+  public func lines(callback: (Swift.String) -> Swift.Void)
+  public var fileName: Swift.String {
+    get
+  }
+}
+public class ModuleFileParser : APPAnalyzeCore.IParser {
+  public init(path: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func parse() async -> [APPAnalyzeCore.ModuleInfo]
+  #endif
+  @objc deinit
+}
+public protocol IParser {
+  #if compiler(>=5.3) && $AsyncAwait
+  func parse() async -> [APPAnalyzeCore.ModuleInfo]
+  #endif
+}
+public struct ModuleInfo : Swift.Decodable {
+  public init(name: Swift.String, version: Swift.String?, frameworks: Swift.Set<Swift.String>, libraries: Swift.Set<Swift.String>, resources: Swift.Set<Swift.String>, dependencies: Swift.Set<Swift.String>, mainModule: Swift.Bool)
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension APPAnalyzeCore.ModuleInfo : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct File : Swift.Hashable {
+  public let name: Swift.String
+  public let path: Swift.String
+  public let size: Swift.Int
+  public init(name: Swift.String, path: Swift.String, size: Swift.Int)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: APPAnalyzeCore.File, b: APPAnalyzeCore.File) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ResourceBundle {
+  public let name: Swift.String
+  public let files: [APPAnalyzeCore.File]
+  public let imageSets: Swift.Set<APPAnalyzeCore.ResourceImageSet>
+  public let datasets: Swift.Set<APPAnalyzeCore.ResourceDataSet>
+  public init(name: Swift.String, files: [APPAnalyzeCore.File], imageSets: Swift.Set<APPAnalyzeCore.ResourceImageSet>, datasets: Swift.Set<APPAnalyzeCore.ResourceDataSet>)
+}
+public struct ComponentResource {
+  public let bundles: [APPAnalyzeCore.ResourceBundle]
+  public init(bundles: [APPAnalyzeCore.ResourceBundle], size: Swift.Int)
+}
+public enum ImagesetScale : Swift.String, Swift.Decodable {
+  case x1
+  case x2
+  case x3
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ResourceDataSet : Swift.Hashable {
+  public let name: Swift.String
+  public let data: [APPAnalyzeCore.ResourceDataSetItem]
+  public let assetsCar: Swift.String?
+  public var size: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: APPAnalyzeCore.ResourceDataSet, b: APPAnalyzeCore.ResourceDataSet) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ResourceDataSetItem : Swift.Hashable {
+  public let filename: Swift.String
+  public let size: Swift.Int
+  public let path: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: APPAnalyzeCore.ResourceDataSetItem, b: APPAnalyzeCore.ResourceDataSetItem) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ResourceImageSet : Swift.Hashable {
+  public let name: Swift.String
+  public let images: [APPAnalyzeCore.ResourceImageSetImage]
+  public let assetsCar: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: APPAnalyzeCore.ResourceImageSet, b: APPAnalyzeCore.ResourceImageSet) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension APPAnalyzeCore.ResourceImageSet {
+  public var size: Swift.Int {
+    get
+  }
+}
+public struct ResourceImageSetImage : Swift.Hashable {
+  public let filename: Swift.String
+  public let scale: APPAnalyzeCore.ImagesetScale?
+  public let size: Swift.Int
+  public let path: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: APPAnalyzeCore.ResourceImageSetImage, b: APPAnalyzeCore.ResourceImageSetImage) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol IReporter {
+  #if compiler(>=5.3) && $AsyncAwait
+  static func generateReport() async
+  #endif
+}
+@_hasMissingDesignatedInitializers public class ReporterManager {
+  #warning("outputPath")
+  public var outputPath: Swift.String
+  public func addReporter(reporter: any APPAnalyzeCore.IReporter.Type)
+  public func removeReporter(reporter: any APPAnalyzeCore.IReporter.Type)
+  public func generateReport(text: Swift.String, fileName: Swift.String)
+  public func generateReport(data: Foundation.Data, fileName: Swift.String)
+  @objc deinit
+}
+public struct UnusedClassIssue : APPAnalyzeCore.IIssue {
+  public let name: Swift.String
+  public let module: Swift.String
+  public let severity: APPAnalyzeCore.Severity
+  public let info: [Swift.String]
+  public let message: Swift.String
+  public let type: APPAnalyzeCore.IssueType
+  public typealias Info = [Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum UnusedClassRule : APPAnalyzeCore.Rule {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func check() async -> [any APPAnalyzeCore.IIssue]
+  #endif
+}
+public struct LibraryFileSize : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct LibrarySize {
+  public let totalSize: Swift.Int
+  public let files: [APPAnalyzeCore.LibraryFileSize]
+}
+public enum FileTool {
+  public static func getMD5(path: Swift.String) -> Swift.String?
+}
+public enum UnusedModuleRule : APPAnalyzeCore.Rule {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func check() async -> [any APPAnalyzeCore.IIssue]
+  #endif
+}
+public let MainBundleName: Swift.String
+@_hasMissingDesignatedInitializers public class APP {
+  public static let shared: APPAnalyzeCore.APP
+  public var classlist: [Swift.String : APPAnalyzeCore.ObjcClass] {
+    get
+  }
+  public var protolist: [Swift.String : APPAnalyzeCore.ObjcProtocol] {
+    get
+  }
+  public var categorylist: [Swift.String : [APPAnalyzeCore.ObjcCategory]] {
+    get
+  }
+  public var modules: [APPAnalyzeCore.Module] {
+    get
+  }
+  public var mainModule: Swift.String {
+    get
+  }
+  @objc deinit
+}
+#warning("暂不支持plugins/watch.app")
+public class IPAParser : APPAnalyzeCore.IParser {
+  public init(appPath: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func parse() async -> [APPAnalyzeCore.ModuleInfo]
+  #endif
+  @objc deinit
+}
+public enum IssueType : Swift.String, Swift.Encodable {
+  case safe
+  case performance
+  case size
+  case module
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol IIssue : Swift.Encodable {
+  associatedtype Info : Swift.Encodable
+  var name: Swift.String { get }
+  var module: Swift.String { get }
+  var severity: APPAnalyzeCore.Severity { get }
+  var info: Self.Info { get }
+  var message: Swift.String { get }
+  var type: APPAnalyzeCore.IssueType { get }
+}
+public struct Issue : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(issue: any APPAnalyzeCore.IIssue)
+}
+public struct UnusedComponent : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum Severity : Swift.String, Swift.Encodable {
+  case warning
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class APPAnalyze {
+  public static let shared: APPAnalyzeCore.APPAnalyze
+  public var parser: (any APPAnalyzeCore.IParser)!
+  final public let config: APPAnalyzeCore.Configuration
+  final public let ruleManager: APPAnalyzeCore.RuleManager
+  final public let reporterManager: APPAnalyzeCore.ReporterManager
+  #if compiler(>=5.3) && $AsyncAwait
+  public func run() async
+  #endif
+  @objc deinit
+}
+public enum DuplicateResourceInBundleRule : APPAnalyzeCore.Rule {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func check() async -> [any APPAnalyzeCore.IIssue]
+  #endif
+}
+extension Swift.Encodable {
+  public var data: Foundation.Data {
+    get
+  }
+}
+public func log(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+public protocol Rule {
+  #if compiler(>=5.3) && $AsyncAwait
+  static func check() async -> [any APPAnalyzeCore.IIssue]
+  #endif
+}
+@_hasMissingDesignatedInitializers public class Configuration {
+  public var currentDirectoryPath: Swift.String {
+    get
+  }
+  public var customConfig: SwiftyJSON.JSON? {
+    get
+  }
+  @objc deinit
+}
+extension APPAnalyzeCore.Configuration {
+  public var rules: SwiftyJSON.JSON? {
+    get
+  }
+}
+public struct GlobalUnusedModuleRuleConfig {
+  public let enable: Swift.Bool
+  public let excludeModules: Swift.Set<Swift.String>
+}
+extension APPAnalyzeCore.Configuration {
+  public var globalUnusedModuleRule: APPAnalyzeCore.GlobalUnusedModuleRuleConfig {
+    get
+  }
+}
+public enum GlobalUnusedModuleRule : APPAnalyzeCore.Rule {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func check() async -> [any APPAnalyzeCore.IIssue]
+  #endif
+}
+public let PackedAssetImage: Swift.String
+public enum RingDependencyRule : APPAnalyzeCore.Rule {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func check() async -> [any APPAnalyzeCore.IIssue]
+  #endif
+}
+@_hasMissingDesignatedInitializers public class RuleManager {
+  public var issues: [any APPAnalyzeCore.IIssue] {
+    get
+  }
+  public func addRule(rule: any APPAnalyzeCore.Rule.Type)
+  public func removeRule(rule: any APPAnalyzeCore.Rule.Type)
+  @objc deinit
+}
+public enum ArchType : Swift.String {
+  case arm64
+  case x86_64
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ObjCIvarRef : Swift.Hashable {
+  public init(class: Swift.String, name: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: APPAnalyzeCore.ObjCIvarRef, b: APPAnalyzeCore.ObjCIvarRef) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MachO {
+  final public let name: Swift.String
+  final public let classlist: Swift.Set<Swift.String>
+  final public let catlist: [APPAnalyzeCore.ObjcCategory]
+  final public let protolist: Swift.Set<Swift.String>
+  final public let classrefs: Swift.Set<Swift.String>
+  final public let superrefs: Swift.Set<Swift.String>
+  final public let selrefs: Swift.Set<Swift.String>
+  final public let objcIvarTypeRefs: Swift.Set<Swift.String>
+  final public let isDynamic: Swift.Bool
+  final public let usedStrings: Swift.Set<Swift.String>
+  final public let objcIvarRefs: Swift.Set<APPAnalyzeCore.ObjCIvarRef>
+  final public let arch: APPAnalyzeCore.ArchType
+  public var frameworkSize: APPAnalyzeCore.LibrarySize {
+    get
+    set
+  }
+  final public let swiftSymbols: Swift.Set<Swift.String>
+  final public let usedSwiftSymbols: Swift.Set<Swift.String>
+  public var loadClasses: [Swift.String] {
+    get
+    set
+  }
+  public var usedProtolist: Swift.Set<Swift.String> {
+    get
+    set
+  }
+  @objc deinit
+}
+public struct ObjcMethod {
+  public let name: Swift.String
+  public let imp: Swift.String
+}
+public struct ObjcProperty {
+  public let name: Swift.String
+  public let type: Swift.String
+  public let attributes: Swift.String
+}
+public struct ObjcProtocol : Swift.Hashable {
+  public static func == (lhs: APPAnalyzeCore.ObjcProtocol, rhs: APPAnalyzeCore.ObjcProtocol) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public let name: Swift.String
+  public let protocols: [Swift.String]
+  public let instanceMethods: [Swift.String]
+  public let classMethods: [Swift.String]
+  public let optionalInstanceMethods: [Swift.String]
+  public let optionalClassMethods: [Swift.String]
+  public let instanceProperties: [APPAnalyzeCore.ObjcProperty]
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ObjcClass {
+  final public let name: Swift.String
+  public var superClassName: Swift.String {
+    get
+  }
+  final public let instanceMethods: [Swift.String]
+  final public let classMethods: [Swift.String]
+  final public let ivars: [Swift.String]
+  final public let instanceProperties: [APPAnalyzeCore.ObjcProperty]
+  final public let classProperties: [APPAnalyzeCore.ObjcProperty]
+  final public let protocols: [Swift.String]
+  final public let isSwiftClass: Swift.Bool
+  public var isLoadclass: Swift.Bool {
+    get
+  }
+  public var superclass: APPAnalyzeCore.ObjcClass? {
+    get
+  }
+  public var allSuperClass: [Swift.String] {
+    get
+  }
+  public var allProtocols: [Swift.String] {
+    get
+  }
+  @objc deinit
+}
+extension APPAnalyzeCore.ObjcClass : Swift.Hashable {
+  public static func == (lhs: APPAnalyzeCore.ObjcClass, rhs: APPAnalyzeCore.ObjcClass) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ObjcCategory {
+  public let name: Swift.String
+  public let cls: Swift.String
+  public let instanceMethods: [Swift.String]
+  public let classMethods: [Swift.String]
+  public let protocols: [Swift.String]
+  public let instanceProperties: [APPAnalyzeCore.ObjcProperty]
+}
+extension APPAnalyzeCore.ObjcCategory {
+  public var allProtocols: [Swift.String] {
+    get
+  }
+}
+extension APPAnalyzeCore.ImagesetScale : Swift.Equatable {}
+extension APPAnalyzeCore.ImagesetScale : Swift.Hashable {}
+extension APPAnalyzeCore.ImagesetScale : Swift.RawRepresentable {}
+extension APPAnalyzeCore.IssueType : Swift.Equatable {}
+extension APPAnalyzeCore.IssueType : Swift.Hashable {}
+extension APPAnalyzeCore.IssueType : Swift.RawRepresentable {}
+extension APPAnalyzeCore.Severity : Swift.Equatable {}
+extension APPAnalyzeCore.Severity : Swift.Hashable {}
+extension APPAnalyzeCore.Severity : Swift.RawRepresentable {}
+extension APPAnalyzeCore.ArchType : Swift.Equatable {}
+extension APPAnalyzeCore.ArchType : Swift.Hashable {}
+extension APPAnalyzeCore.ArchType : Swift.RawRepresentable {}

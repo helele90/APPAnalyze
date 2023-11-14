@@ -1,0 +1,107 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - identifier_name
+  - nesting
+  - line_length
+  - shorthand_operator
+opt_in_rules: # some rules are only opt-in
+  - anyobject_protocol
+  - array_init
+  - closure_body_length
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - convenience_type
+  - discouraged_object_literal
+  - empty_collection_literal
+#   - empty_count 有bug
+  - empty_string
+  - enum_case_associated_values_count
+  - explicit_init
+  - fatal_error_message
+  - file_name_no_space
+  - first_where
+  - flatmap_over_map_reduce
+  - force_unwrapping
+#  - function_default_parameter_at_end
+  - identical_operands
+ # - indentation_width
+  - joined_default_parameter
+  - last_where
+  - legacy_random
+  - legacy_multiple
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - operator_usage_whitespace
+  - optional_enum_case_matching
+#   - prefer_self_type_over_type_of_self 有 bug
+  - prefer_zero_over_explicit_init
+  - private_action
+  - redundant_nil_coalescing
+#  - redundant_type_annotation 保留类型信息可能提高编译速度
+  - sorted_first_last
+  - static_operator
+  - toggle_bool
+  - unowned_variable_capture
+  - unused_declaration
+  - unused_import
+  - vertical_parameter_alignment_on_call
+  - yoda_condition
+  # Find all the available rules by running:
+  # swiftlint rules
+#included: # paths to include during linting. `--path` is ignored if present.
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Example
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+  - explicit_self
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+closure_body_length:
+- 100
+- 200
+deployment_target:
+  iOS_deployment_target: 9.0
+file_length:
+  warning: 2000
+  error: 5000
+function_body_length:
+- 500
+- 1000
+large_tuple:
+- 2
+- 3
+force_cast:
+  severity: warning
+
+#line_length:
+#- 200
+#- 300
+type_name:
+  max_length: 50
+#missing_docs:
+#- open, public
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
+
+custom_rules:
+  disable_print:
+    included: ".*\\.swift"
+    name: "print usage"
+    regex: "((\\bprint)|(Swift\\.print))\\s*\\("
+    message: "Prefer os_log over print"
+    severity: error
+  disable_mask:
+    included: ".*\\.swift"
+    name: "mask usage"
+    regex: "((\\bprint)|(Swift\\.print))\\s*\\("
+    message: "使用mask需要注意性能"
+    severity: warning
