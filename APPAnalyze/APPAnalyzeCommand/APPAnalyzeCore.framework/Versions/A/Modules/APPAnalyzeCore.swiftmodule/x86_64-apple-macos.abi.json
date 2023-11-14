@@ -661,251 +661,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "IParser",
-            "printedName": "IParser",
-            "usr": "s:14APPAnalyzeCore7IParserP",
-            "mangledName": "$s14APPAnalyzeCore7IParserP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "APPAnalyzeCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "IParser",
-        "printedName": "IParser",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "parse",
-            "printedName": "parse()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[APPAnalyzeCore.ModuleInfo]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ModuleInfo",
-                    "printedName": "APPAnalyzeCore.ModuleInfo",
-                    "usr": "s:14APPAnalyzeCore10ModuleInfoV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14APPAnalyzeCore7IParserP5parseSayAA10ModuleInfoVGyYaF",
-            "mangledName": "$s14APPAnalyzeCore7IParserP5parseSayAA10ModuleInfoVGyYaF",
-            "moduleName": "APPAnalyzeCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : APPAnalyzeCore.IParser>",
-            "sugared_genericSig": "<Self where Self : APPAnalyzeCore.IParser>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:14APPAnalyzeCore7IParserP",
-        "mangledName": "$s14APPAnalyzeCore7IParserP",
-        "moduleName": "APPAnalyzeCore",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ModuleInfo",
-        "printedName": "ModuleInfo",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(name:version:frameworks:libraries:resources:dependencies:mainModule:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ModuleInfo",
-                "printedName": "APPAnalyzeCore.ModuleInfo",
-                "usr": "s:14APPAnalyzeCore10ModuleInfoV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<Swift.String>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<Swift.String>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<Swift.String>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<Swift.String>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14APPAnalyzeCore10ModuleInfoV4name7version10frameworks9libraries9resources12dependencies04mainC0ACSS_SSSgShySSGA3LSbtcfc",
-            "mangledName": "$s14APPAnalyzeCore10ModuleInfoV4name7version10frameworks9libraries9resources12dependencies04mainC0ACSS_SSSgShySSGA3LSbtcfc",
-            "moduleName": "APPAnalyzeCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ModuleInfo",
-                "printedName": "APPAnalyzeCore.ModuleInfo",
-                "usr": "s:14APPAnalyzeCore10ModuleInfoV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14APPAnalyzeCore10ModuleInfoV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14APPAnalyzeCore10ModuleInfoV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "APPAnalyzeCore",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14APPAnalyzeCore10ModuleInfoV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s14APPAnalyzeCore10ModuleInfoV6encode2toys7Encoder_p_tKF",
-            "moduleName": "APPAnalyzeCore",
-            "implicit": true,
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:14APPAnalyzeCore10ModuleInfoV",
-        "mangledName": "$s14APPAnalyzeCore10ModuleInfoV",
-        "moduleName": "APPAnalyzeCore",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Parser",
+            "printedName": "Parser",
+            "usr": "s:14APPAnalyzeCore6ParserP",
+            "mangledName": "$s14APPAnalyzeCore6ParserP"
           }
         ]
       },
@@ -3170,8 +2929,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "IReporter",
-        "printedName": "IReporter",
+        "name": "Reporter",
+        "printedName": "Reporter",
         "children": [
           {
             "kind": "Function",
@@ -3185,11 +2944,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14APPAnalyzeCore9IReporterP14generateReportyyYaFZ",
-            "mangledName": "$s14APPAnalyzeCore9IReporterP14generateReportyyYaFZ",
+            "usr": "s:14APPAnalyzeCore8ReporterP14generateReportyyYaFZ",
+            "mangledName": "$s14APPAnalyzeCore8ReporterP14generateReportyyYaFZ",
             "moduleName": "APPAnalyzeCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : APPAnalyzeCore.IReporter>",
-            "sugared_genericSig": "<Self where Self : APPAnalyzeCore.IReporter>",
+            "genericSig": "<τ_0_0 where τ_0_0 : APPAnalyzeCore.Reporter>",
+            "sugared_genericSig": "<Self where Self : APPAnalyzeCore.Reporter>",
             "static": true,
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
@@ -3197,8 +2956,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:14APPAnalyzeCore9IReporterP",
-        "mangledName": "$s14APPAnalyzeCore9IReporterP",
+        "usr": "s:14APPAnalyzeCore8ReporterP",
+        "mangledName": "$s14APPAnalyzeCore8ReporterP",
         "moduleName": "APPAnalyzeCore",
         "declAttributes": [
           "AccessControl",
@@ -3309,20 +3068,20 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "APPAnalyzeCore.IReporter.Type",
+                "printedName": "APPAnalyzeCore.Reporter.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IReporter",
-                    "printedName": "APPAnalyzeCore.IReporter",
-                    "usr": "s:14APPAnalyzeCore9IReporterP"
+                    "name": "Reporter",
+                    "printedName": "APPAnalyzeCore.Reporter",
+                    "usr": "s:14APPAnalyzeCore8ReporterP"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:14APPAnalyzeCore15ReporterManagerC03addC08reporteryAA9IReporter_pXp_tF",
-            "mangledName": "$s14APPAnalyzeCore15ReporterManagerC03addC08reporteryAA9IReporter_pXp_tF",
+            "usr": "s:14APPAnalyzeCore15ReporterManagerC03addC08reporteryAA0C0_pXp_tF",
+            "mangledName": "$s14APPAnalyzeCore15ReporterManagerC03addC08reporteryAA0C0_pXp_tF",
             "moduleName": "APPAnalyzeCore",
             "declAttributes": [
               "AccessControl",
@@ -3343,20 +3102,20 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "APPAnalyzeCore.IReporter.Type",
+                "printedName": "APPAnalyzeCore.Reporter.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IReporter",
-                    "printedName": "APPAnalyzeCore.IReporter",
-                    "usr": "s:14APPAnalyzeCore9IReporterP"
+                    "name": "Reporter",
+                    "printedName": "APPAnalyzeCore.Reporter",
+                    "usr": "s:14APPAnalyzeCore8ReporterP"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:14APPAnalyzeCore15ReporterManagerC06removeC08reporteryAA9IReporter_pXp_tF",
-            "mangledName": "$s14APPAnalyzeCore15ReporterManagerC06removeC08reporteryAA9IReporter_pXp_tF",
+            "usr": "s:14APPAnalyzeCore15ReporterManagerC06removeC08reporteryAA0C0_pXp_tF",
+            "mangledName": "$s14APPAnalyzeCore15ReporterManagerC06removeC08reporteryAA0C0_pXp_tF",
             "moduleName": "APPAnalyzeCore",
             "declAttributes": [
               "AccessControl"
@@ -3861,6 +3620,247 @@
             "printedName": "Rule",
             "usr": "s:14APPAnalyzeCore4RuleP",
             "mangledName": "$s14APPAnalyzeCore4RuleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "APPAnalyzeCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Parser",
+        "printedName": "Parser",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "parse",
+            "printedName": "parse()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[APPAnalyzeCore.ModuleInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleInfo",
+                    "printedName": "APPAnalyzeCore.ModuleInfo",
+                    "usr": "s:14APPAnalyzeCore10ModuleInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14APPAnalyzeCore6ParserP5parseSayAA10ModuleInfoVGyYaF",
+            "mangledName": "$s14APPAnalyzeCore6ParserP5parseSayAA10ModuleInfoVGyYaF",
+            "moduleName": "APPAnalyzeCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : APPAnalyzeCore.Parser>",
+            "sugared_genericSig": "<Self where Self : APPAnalyzeCore.Parser>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14APPAnalyzeCore6ParserP",
+        "mangledName": "$s14APPAnalyzeCore6ParserP",
+        "moduleName": "APPAnalyzeCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModuleInfo",
+        "printedName": "ModuleInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:version:frameworks:libraries:resources:dependencies:mainModule:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleInfo",
+                "printedName": "APPAnalyzeCore.ModuleInfo",
+                "usr": "s:14APPAnalyzeCore10ModuleInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14APPAnalyzeCore10ModuleInfoV4name7version10frameworks9libraries9resources12dependencies04mainC0ACSS_SSSgShySSGA3LSbtcfc",
+            "mangledName": "$s14APPAnalyzeCore10ModuleInfoV4name7version10frameworks9libraries9resources12dependencies04mainC0ACSS_SSSgShySSGA3LSbtcfc",
+            "moduleName": "APPAnalyzeCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleInfo",
+                "printedName": "APPAnalyzeCore.ModuleInfo",
+                "usr": "s:14APPAnalyzeCore10ModuleInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14APPAnalyzeCore10ModuleInfoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14APPAnalyzeCore10ModuleInfoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "APPAnalyzeCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14APPAnalyzeCore10ModuleInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14APPAnalyzeCore10ModuleInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "APPAnalyzeCore",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14APPAnalyzeCore10ModuleInfoV",
+        "mangledName": "$s14APPAnalyzeCore10ModuleInfoV",
+        "moduleName": "APPAnalyzeCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -4743,10 +4743,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "IParser",
-            "printedName": "IParser",
-            "usr": "s:14APPAnalyzeCore7IParserP",
-            "mangledName": "$s14APPAnalyzeCore7IParserP"
+            "name": "Parser",
+            "printedName": "Parser",
+            "usr": "s:14APPAnalyzeCore6ParserP",
+            "mangledName": "$s14APPAnalyzeCore6ParserP"
           }
         ]
       },
@@ -5741,21 +5741,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "APPAnalyzeCore.IParser?",
+                "printedName": "APPAnalyzeCore.Parser?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IParser",
-                    "printedName": "APPAnalyzeCore.IParser",
-                    "usr": "s:14APPAnalyzeCore7IParserP"
+                    "name": "Parser",
+                    "printedName": "APPAnalyzeCore.Parser",
+                    "usr": "s:14APPAnalyzeCore6ParserP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14APPAnalyzeCore0A0C6parserAA7IParser_pSgvp",
-            "mangledName": "$s14APPAnalyzeCore0A0C6parserAA7IParser_pSgvp",
+            "usr": "s:14APPAnalyzeCore0A0C6parserAA6Parser_pSgvp",
+            "mangledName": "$s14APPAnalyzeCore0A0C6parserAA6Parser_pSgvp",
             "moduleName": "APPAnalyzeCore",
             "declAttributes": [
               "HasInitialValue",
@@ -5773,21 +5773,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "APPAnalyzeCore.IParser?",
+                    "printedName": "APPAnalyzeCore.Parser?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IParser",
-                        "printedName": "APPAnalyzeCore.IParser",
-                        "usr": "s:14APPAnalyzeCore7IParserP"
+                        "name": "Parser",
+                        "printedName": "APPAnalyzeCore.Parser",
+                        "usr": "s:14APPAnalyzeCore6ParserP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore0A0C6parserAA7IParser_pSgvg",
-                "mangledName": "$s14APPAnalyzeCore0A0C6parserAA7IParser_pSgvg",
+                "usr": "s:14APPAnalyzeCore0A0C6parserAA6Parser_pSgvg",
+                "mangledName": "$s14APPAnalyzeCore0A0C6parserAA6Parser_pSgvg",
                 "moduleName": "APPAnalyzeCore",
                 "implicit": true,
                 "accessorKind": "get"
@@ -5805,21 +5805,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "APPAnalyzeCore.IParser?",
+                    "printedName": "APPAnalyzeCore.Parser?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IParser",
-                        "printedName": "APPAnalyzeCore.IParser",
-                        "usr": "s:14APPAnalyzeCore7IParserP"
+                        "name": "Parser",
+                        "printedName": "APPAnalyzeCore.Parser",
+                        "usr": "s:14APPAnalyzeCore6ParserP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore0A0C6parserAA7IParser_pSgvs",
-                "mangledName": "$s14APPAnalyzeCore0A0C6parserAA7IParser_pSgvs",
+                "usr": "s:14APPAnalyzeCore0A0C6parserAA6Parser_pSgvs",
+                "mangledName": "$s14APPAnalyzeCore0A0C6parserAA6Parser_pSgvs",
                 "moduleName": "APPAnalyzeCore",
                 "implicit": true,
                 "accessorKind": "set"
@@ -5836,8 +5836,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore0A0C6parserAA7IParser_pSgvM",
-                "mangledName": "$s14APPAnalyzeCore0A0C6parserAA7IParser_pSgvM",
+                "usr": "s:14APPAnalyzeCore0A0C6parserAA6Parser_pSgvM",
+                "mangledName": "$s14APPAnalyzeCore0A0C6parserAA6Parser_pSgvM",
                 "moduleName": "APPAnalyzeCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12263,70 +12263,70 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 414,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 618,
+      "offset": 616,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 632,
+      "offset": 630,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 664,
+      "offset": 662,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1366,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1384,
+      "offset": 1380,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1396,
+      "offset": 1392,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1585,
+      "offset": 1581,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1595,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1607,
       "length": 1,
       "value": "\"\""
     },
@@ -15364,259 +15364,259 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 731,
+      "offset": 730,
       "length": 6,
       "value": "\".app\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 808,
+      "offset": 807,
       "length": 2,
       "value": "-4"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 935,
+      "offset": 934,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 1883,
+      "offset": 1882,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 1987,
+      "offset": 1986,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2086,
       "length": 12,
       "value": "\"Frameworks\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2114,
+      "offset": 2113,
       "length": 16,
       "value": "\"_CodeSignature\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2144,
       "length": 9,
       "value": "\"SC_Info\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2169,
+      "offset": 2168,
       "length": 9,
       "value": "\"PlugIns\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2368,
+      "offset": 2367,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 2378,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2390,
+      "offset": 2389,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2486,
+      "offset": 2485,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2497,
+      "offset": 2496,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2507,
+      "offset": 2506,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 2581,
+      "offset": 2580,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 2651,
+      "offset": 2650,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 2667,
+      "offset": 2666,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 2839,
+      "offset": 2838,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2882,
+      "offset": 2881,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 2893,
+      "offset": 2892,
       "length": 1,
       "value": "\"\/Frameworks\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 3005,
+      "offset": 3004,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3116,
+      "offset": 3115,
       "length": 12,
       "value": "\".framework\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3214,
+      "offset": 3213,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3231,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3245,
+      "offset": 3244,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 3332,
+      "offset": 3331,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 3457,
+      "offset": 3456,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 3580,
+      "offset": 3579,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3781,
+      "offset": 3780,
       "length": 16,
       "value": "\"_CodeSignature\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3821,
+      "offset": 3820,
       "length": 9,
       "value": "\"SC_Info\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3926,
+      "offset": 3925,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3939,
+      "offset": 3938,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "StringLiteral",
-      "offset": 3959,
+      "offset": 3958,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 4143,
+      "offset": 4142,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "Array",
-      "offset": 4187,
+      "offset": 4186,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Parser\/IPAParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 4203,
+      "offset": 4202,
       "length": 5,
       "value": "false"
     },
@@ -15875,14 +15875,14 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/APPAnalyze.swift",
       "kind": "StringLiteral",
-      "offset": 831,
+      "offset": 830,
       "length": 21,
       "value": "\"需要设置 parser\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/APPAnalyze.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 945,
       "length": 25,
       "value": "\"需要设置 outputPath\""
     },
@@ -16078,161 +16078,161 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "Array",
-      "offset": 2858,
+      "offset": 2857,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2889,
+      "offset": 2888,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2921,
+      "offset": 2920,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "Array",
-      "offset": 3058,
+      "offset": 3057,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3091,
+      "offset": 3090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "Array",
-      "offset": 3354,
+      "offset": 3353,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3593,
+      "offset": 3592,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "Array",
-      "offset": 3703,
+      "offset": 3702,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3784,
+      "offset": 3783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "Array",
-      "offset": 3879,
+      "offset": 3878,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 4015,
+      "offset": 4014,
       "length": 10,
       "value": "\"imageset\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 4048,
+      "offset": 4047,
       "length": 9,
       "value": "\"dataset\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 4304,
+      "offset": 4303,
       "length": 12,
       "value": "\"Assets.car\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "Array",
-      "offset": 4539,
+      "offset": 4538,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 6343,
+      "offset": 6342,
       "length": 19,
       "value": "\"package_size.json\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 6535,
+      "offset": 6534,
       "length": 47,
       "value": "\"<script>var appSizeData = \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 6571,
+      "offset": 6570,
       "length": 1,
       "value": "\";<\/script>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 6613,
+      "offset": 6612,
       "length": 2719,
       "value": "\"<!doctype html><html><head><meta charset=\"utf-8\"\/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"\/><style type=\"text\/css\">body{font-family:Arial,Helvetica,sans-serif;font-size:0.9rem}table{border:1px solid gray;border-collapse:collapse;-moz-box-shadow:3px 3px 4px#AAA;-webkit-box-shadow:3px 3px 4px#AAA;box-shadow:3px 3px 4px#AAA;vertical-align:top;height:64px}td,th{border:1px solid#D3D3D3;padding:5px 10px 5px 10px;text-align:center}th{border-bottom:1px solid black;background-color:#FAFAFA}<\/style><title>包体积<\/title>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 7180,
+      "offset": 7179,
       "length": 1,
       "value": "\"<script>function renderAppInfo(data){const version=data.version;const allSize=formatSize(data.allSize);const binarySize=formatSize(data.binarySize);const resourceSize=formatSize(data.resourceSize);document.getElementById('allSize').innerHTML=allSize;document.getElementById('binarySize').innerHTML=binarySize;document.getElementById('resourceSize').innerHTML=resourceSize}function renderModulesInfo(data){var trs='';for(var i=0;i<data.components.length;i++){const component=data.components[i];const name=component.name;const version=component.version;const resourceSize=formatSize(component.resource.size);const allSize=formatSize(component.size);const binarySize=formatSize(component.size-component.resource.size);const sizePercent=(component.size\/data.allSize*100).toFixed(1);const link=`.\/module_size.html?framework=${name}`;const tr=`<tr><td>${i+1}<\/td><td><a target=\"_blank\"href=\"${link}\">${name}<\/a><\/td><td>${binarySize}<\/td><td>${resourceSize}<\/td><td>${allSize}<\/td><td>${sizePercent}%<\/td><\/tr>`;trs+=tr}document.getElementById('module_tbody').innerHTML=trs}function formatSize(size){if(size==0){return''}let a=size;if(a<1000){return`${a}B`}a=parseInt(a\/1000);if(a<1000){return`${a}KB`}a=a\/1000;return`${a.toFixed(1)}MB`}function onLoad(){const data=appSizeData;renderAppInfo(data);renderModulesInfo(data)}<\/script><\/head><body onload=\"onLoad()\"><h1>包体积<\/h1><table><thead><tr><th style=\"width: 60pt;\"><b>二进制大小<\/b><\/th><th style=\"width: 60pt;\"><b>资源大小<\/b><\/th><th style=\"width: 60pt;\"><b>总大小<\/b><\/th><\/tr><\/thead><tbody><tr><td id=\"binarySize\"style=\"text-align: center;\"><\/td><td id=\"resourceSize\"style=\"text-align: center;\"><\/td><td id=\"allSize\"style=\"text-align: center;\"><\/td><\/tr><\/tbody><\/table><h2>模块大小<\/h2><table><thead><tr><th style=\"width: 50pt;\"><b>序号<\/b><\/th><th style=\"width: 120pt;\"><b>模块名<\/b><\/th><th style=\"width: 60pt;\"><b>二进制大小<\/b><\/th><th style=\"width: 60pt;\"><b>资源大小<\/b><\/th><th style=\"width: 60pt;\"><b>总大小<\/b><\/th><th style=\"width: 60pt;\"><b>总大小占比<\/b><\/th><\/tr><\/thead><tbody id=\"module_tbody\"><\/tbody><\/table><br\/><\/body><\/html>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 9412,
+      "offset": 9411,
       "length": 15,
       "value": "\"app_size.html\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 9460,
+      "offset": 9459,
       "length": 4601,
       "value": "\"<!doctype html><html><head><meta charset=\"utf-8\"\/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"\/><style type=\"text\/css\">body{font-family:Arial,Helvetica,sans-serif;font-size:0.9rem}table{border:1px solid gray;border-collapse:collapse;-moz-box-shadow:3px 3px 4px#AAA;-webkit-box-shadow:3px 3px 4px#AAA;box-shadow:3px 3px 4px#AAA;vertical-align:top;height:64px}a{text-decoration:none}td,th{border:1px solid#D3D3D3;padding:5px 10px 5px 10px;text-align:center}th{border-bottom:1px solid black;background-color:#FAFAFA}<\/style><title>模块体积<\/title>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 10053,
+      "offset": 10052,
       "length": 1,
       "value": "\"<script>function getPackageSizeInfo(module){const data=appSizeData;for(let i=0;i<data.components.length;i++){const component=data.components[i];const name=component.name;if(name==module){renderAppInfo(component);renderModulesInfo(component);renderModulesInfo2(component);break}}}function renderAppInfo(data){const version=data.version;const allSize=formatSize(data.size);const binarySize=formatSize(data.size-data.resource.size);const resourceSize=formatSize(data.resource.size);document.getElementById('allSize').innerHTML=allSize;document.getElementById('binarySize').innerHTML=binarySize;document.getElementById('resourceSize').innerHTML=resourceSize}function renderModulesInfo(data){let items=new Array();for(let i=0;i<data.libraries.length;i++){const library=data.libraries[i];const files=library.files;if(files&&files.length>0){for(let j=0;j<files.length;j++){const file=files[j];const name=file.name;const size=file.size;const libraryName=library.name;items.push({name,size,library:libraryName})}}else{items.push({name:library.name,size:library.size,library:''})}}items.sort(function(a,b){return b.size-a.size});let trs='';for(let i=0;i<items.length;i++){const item=items[i];const tr=`<tr><td>${i+1}<\/td><td>${item.name}<\/td><td>${formatSize(item.size)}<\/td><td>${item.library}<\/td><\/tr>`;trs+=tr}document.getElementById('module_tbody').innerHTML=trs}function renderModulesInfo2(data){let items=new Array();const bundles=data.resource.bundles;if(!bundles){document.getElementById('module_tbody2').innerHTML='';return}for(let i=0;i<data.resource.bundles.length;i++){const bundle=data.resource.bundles[i];if(bundle.files){const files=bundle.files;for(let j=0;j<files.length;j++){const file=files[j];const name=file.name;const size=file.size;items.push({name,size,bundle:bundle.name})}}if(bundle.imagesets){const imagesets=bundle.imagesets;for(let j=0;j<imagesets.length;j++){const imageset=imagesets[j];const name=`${imageset.name}.imageset`;const size=imageset.size;items.push({name,size,bundle:bundle.name})}}}items.sort(function(a,b){return b.size-a.size});let trs='';for(let i=0;i<items.length;i++){const item=items[i];const tr=`<tr><td>${i+1}<\/td><td>${item.name}<\/td><td>${formatSize(item.size)}<\/td><td>${item.bundle}<\/td><\/tr>`;trs+=tr}document.getElementById('module_tbody2').innerHTML=trs}function formatSize(size){if(size==0){return''}let a=size;if(a<1000){return`${a}B`}a=parseInt(a\/1000);if(a<1000){return`${a}KB`}a=a\/1000;return`${a.toFixed(1)}MB`}function onLoad(){const framework=getQueryVariable('framework');getPackageSizeInfo(framework);document.getElementById('framework').innerHTML=framework;}function getQueryVariable(variable){var query=window.location.search.substring(1);var vars=query.split(\"&\");for(var i=0;i<vars.length;i++){var pair=vars[i].split(\"=\");if(pair[0]==variable){return pair[1]}}return(false)}<\/script><\/head><body onload=\"onLoad()\"><h2>总大小<\/h2><table><thead><tr><th style=\"width: 60pt;\"><b>模块<\/b><\/th><th style=\"width: 60pt;\"><b>二进制大小<\/b><\/th><th style=\"width: 60pt;\"><b>资源大小<\/b><\/th><th style=\"width: 60pt;\"><b>总大小<\/b><\/th><\/tr><\/thead><tbody><tr><td id=\"framework\"style=\"text-align: center;\"><\/td><td id=\"binarySize\"style=\"text-align: center;\"><\/td><td id=\"resourceSize\"style=\"text-align: center;\"><\/td><td id=\"allSize\"style=\"text-align: center;\"><\/td><\/tr><\/tbody><\/table><div style=\"display:flex;\"><div><h2>二进制大小<\/h2><table><thead><tr><th style=\"width: 50pt;\"><b>序号<\/b><\/th><th style=\"width: 120pt;\"><b>文件名<\/b><\/th><th style=\"width: 60pt;\"><b>大小<\/b><\/th><th style=\"width: 120pt;\"><b>库名<\/b><\/th><\/tr><\/thead><tbody id=\"module_tbody\"><\/tbody><\/table><\/div><div style=\"margin-left: 100pt;\"><h2>资源大小<\/h2><table><thead><tr><th style=\"width: 60pt;\"><b>序号<\/b><\/th><th style=\"width: 120pt;\"><b>文件名<\/b><\/th><th style=\"width: 60pt;\"><b>大小<\/b><\/th><th style=\"width: 120pt;\"><b>Bundle<\/b><\/th><\/tr><\/thead><tbody id=\"module_tbody2\"><\/tbody><\/table><\/div><\/div><\/body><\/html>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/APPPackageSizeReporter.swift",
       "kind": "StringLiteral",
-      "offset": 14142,
+      "offset": 14141,
       "length": 18,
       "value": "\"module_size.html\""
     },
@@ -18234,70 +18234,70 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "Dictionary",
-      "offset": 229,
+      "offset": 228,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 666,
+      "offset": 665,
       "length": 13,
       "value": "\"issues.json\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 850,
       "length": 46,
       "value": "\"<script>var issuesData = \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 885,
       "length": 1,
       "value": "\";<\/script>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 936,
+      "offset": 935,
       "length": 2327,
       "value": "\"<!doctype html><html><head><meta charset=\"utf-8\"\/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"\/><style type=\"text\/css\">body{font-family:Arial,Helvetica,sans-serif;font-size:0.9rem}a{text-decoration:none}table{border:1px solid gray;border-collapse:collapse;-moz-box-shadow:3px 3px 4px#AAA;-webkit-box-shadow:3px 3px 4px#AAA;box-shadow:3px 3px 4px#AAA;vertical-align:top;height:64px}td,th{border:1px solid#D3D3D3;padding:5px 10px 5px 10px;text-align:center}th{border-bottom:1px solid black;background-color:#FAFAFA}<\/style><title>问题数量<\/title>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 1529,
+      "offset": 1528,
       "length": 1,
       "value": "\"<script>function onLoad(){const data=issuesData;let items=new Array();for(let name in data){const issues=data[name];let count=0;let safeCount=0;let performanceCount=0;let packageSizeCount=0;let antiPatternCount=0;for(let i=0;i<issues.length;i++){const issue=issues[i];const info=issue.info;let issueLength=1;if(Array.isArray(info)){issueLength=info.length}if(issueLength==0){issueLength=1}count+=issueLength;const type=issue.type;if(type=='安全'){safeCount+=issueLength}else if(type=='启动性能'||type=='性能'){performanceCount+=issueLength}else if(type=='包体积'){packageSizeCount+=issueLength}else if(type=='组件依赖规范'){antiPatternCount+=issueLength}}items.push({name,safeCount,performanceCount,packageSizeCount,antiPatternCount,count})}let sortedItems=items.sort(function(a,b){return b.count-a.count});let trs='';for(let i=0;i<sortedItems.length;i++){const item=sortedItems[i];const link=`.\/module_issues.html?module=${item.name}`;const tr=`<tr><td>${i+1}<\/td><td><a target=\"_blank\"href=\"${link}\">${item.name}<\/a><\/td><td>${item.packageSizeCount}<\/td><td>${item.performanceCount}<\/td><td>${item.antiPatternCount}<\/td><td>${item.safeCount}<\/td><td>${item.count}<\/td><\/tr>`;trs+=tr}document.getElementById('module_tbody').innerHTML=trs}<\/script><\/head><body onload=\"onLoad()\"><h2>问题数量<\/h2><table><thead><tr><th style=\"width: 50pt;\"><b>序号<\/b><\/th><th style=\"width: 120pt;\"><b>模块名<\/b><\/th><th style=\"width: 60pt;\"><b>包体积<\/b><\/th><th style=\"width: 60pt;\"><b>性能<\/b><\/th><th style=\"width: 60pt;\"><b>组件依赖<\/b><\/th><th style=\"width: 60pt;\"><b>安全<\/b><\/th><th style=\"width: 60pt;\"><b>总数<\/b><\/th><\/tr><\/thead><tbody id=\"module_tbody\"><\/tbody><\/table><br\/><\/body><\/html>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 3362,
+      "offset": 3361,
       "length": 17,
       "value": "\"app_issues.html\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 3425,
+      "offset": 3424,
       "length": 2298,
       "value": "\"<!doctype html><html><head><meta charset=\"utf-8\"\/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"\/><style type=\"text\/css\">body{font-family:Arial,Helvetica,sans-serif;font-size:0.9rem}table{border:1px solid gray;border-collapse:collapse;-moz-box-shadow:3px 3px 4px#AAA;-webkit-box-shadow:3px 3px 4px#AAA;box-shadow:3px 3px 4px#AAA;vertical-align:top;height:64px}td,th{border:1px solid#D3D3D3;padding:5px 10px 5px 10px;text-align:center}th{border-bottom:1px solid black;background-color:#FAFAFA}#orange{background-color:orange;color:white}#red{background-color:red;color:white}<\/style><title>模块问题<\/title>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 4077,
+      "offset": 4076,
       "length": 1,
       "value": "\"<script>function getPackageSizeInfo(module){const issues=issuesData[module];let trs='';let index=1;for(let i=0;i<issues.length;i++){const issue=issues[i];const info=issue.info;if(Array.isArray(info)&&info.length>0){for(let i=0;i<info.length;i++){const style=issue.severity=='Warning'?'orange':'red';const tr=`<tr><td>${index}<\/td><td>${issue.name}<\/td><td>${JSON.stringify(info[i],null,2)}<\/td><td id=\"${style}\">${issue.severity}<\/td><td>${issue.type}<\/td><td>${issue.message}<\/td><\/tr>`;trs+=tr;index+=1}}else{const style=issue.severity=='Warning'?'orange':'red';const tr=`<tr><td>${index}<\/td><td>${issue.name}<\/td><td>${JSON.stringify(issue.info,null,2)}<\/td><td id=\"${style}\">${issue.severity}<\/td><td>${issue.type}<\/td><td>${issue.message}<\/td><\/tr>`;trs+=tr;index+=1}}document.getElementById('module_tbody').innerHTML=trs}function onLoad(){const module=getQueryVariable('module');getPackageSizeInfo(module);document.getElementById('module').innerHTML=`${module}`}function getQueryVariable(variable){var query=window.location.search.substring(1);var vars=query.split(\"&\");for(var i=0;i<vars.length;i++){var pair=vars[i].split(\"=\");if(pair[0]==variable){return pair[1]}}return(false)}<\/script><\/head><body onload=\"onLoad()\"><h2>模块<\/h2><h3 id='module'><\/h3><h2>问题列表<\/h2><table><thead><tr><th style=\"width: 50pt;\"><b>序号<\/b><\/th><th style=\"width: 120pt;\"><b>问题<\/b><\/th><th style=\"width: 60pt;\"><b>数据<\/b><\/th><th style=\"width: 60pt;\"><b>严重性<\/b><\/th><th style=\"width: 60pt;\"><b>类型<\/b><\/th><th style=\"width: 160pt;\"><b>消息<\/b><\/th><\/tr><\/thead><tbody id=\"module_tbody\"><\/tbody><\/table><\/body><\/html>\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Reporters\/IssueReporter.swift",
       "kind": "StringLiteral",
-      "offset": 5817,
+      "offset": 5816,
       "length": 20,
       "value": "\"module_issues.html\""
     },

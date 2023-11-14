@@ -48,24 +48,12 @@ extension Swift.String {
     get
   }
 }
-public class ModuleFileParser : APPAnalyzeCore.IParser {
+public class ModuleFileParser : APPAnalyzeCore.Parser {
   public init(path: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   public func parse() async -> [APPAnalyzeCore.ModuleInfo]
   #endif
   @objc deinit
-}
-public protocol IParser {
-  #if compiler(>=5.3) && $AsyncAwait
-  func parse() async -> [APPAnalyzeCore.ModuleInfo]
-  #endif
-}
-public struct ModuleInfo : Swift.Decodable {
-  public init(name: Swift.String, version: Swift.String?, frameworks: Swift.Set<Swift.String>, libraries: Swift.Set<Swift.String>, resources: Swift.Set<Swift.String>, dependencies: Swift.Set<Swift.String>, mainModule: Swift.Bool)
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension APPAnalyzeCore.ModuleInfo : Swift.Encodable {
-  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct File : Swift.Hashable {
   public let name: Swift.String
@@ -148,7 +136,7 @@ public struct ResourceImageSetImage : Swift.Hashable {
     get
   }
 }
-public protocol IReporter {
+public protocol Reporter {
   #if compiler(>=5.3) && $AsyncAwait
   static func generateReport() async
   #endif
@@ -156,8 +144,8 @@ public protocol IReporter {
 @_hasMissingDesignatedInitializers public class ReporterManager {
   #warning("outputPath")
   public var outputPath: Swift.String
-  public func addReporter(reporter: any APPAnalyzeCore.IReporter.Type)
-  public func removeReporter(reporter: any APPAnalyzeCore.IReporter.Type)
+  public func addReporter(reporter: any APPAnalyzeCore.Reporter.Type)
+  public func removeReporter(reporter: any APPAnalyzeCore.Reporter.Type)
   public func generateReport(text: Swift.String, fileName: Swift.String)
   public func generateReport(data: Foundation.Data, fileName: Swift.String)
   @objc deinit
@@ -176,6 +164,18 @@ public enum UnusedClassRule : APPAnalyzeCore.Rule {
   #if compiler(>=5.3) && $AsyncAwait
   public static func check() async -> [any APPAnalyzeCore.IIssue]
   #endif
+}
+public protocol Parser {
+  #if compiler(>=5.3) && $AsyncAwait
+  func parse() async -> [APPAnalyzeCore.ModuleInfo]
+  #endif
+}
+public struct ModuleInfo : Swift.Decodable {
+  public init(name: Swift.String, version: Swift.String?, frameworks: Swift.Set<Swift.String>, libraries: Swift.Set<Swift.String>, resources: Swift.Set<Swift.String>, dependencies: Swift.Set<Swift.String>, mainModule: Swift.Bool)
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension APPAnalyzeCore.ModuleInfo : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct LibraryFileSize : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -213,7 +213,7 @@ public let MainBundleName: Swift.String
   @objc deinit
 }
 #warning("暂不支持plugins/watch.app")
-public class IPAParser : APPAnalyzeCore.IParser {
+public class IPAParser : APPAnalyzeCore.Parser {
   public init(appPath: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   public func parse() async -> [APPAnalyzeCore.ModuleInfo]
@@ -258,7 +258,7 @@ public enum Severity : Swift.String, Swift.Encodable {
 }
 @_hasMissingDesignatedInitializers public class APPAnalyze {
   public static let shared: APPAnalyzeCore.APPAnalyze
-  public var parser: (any APPAnalyzeCore.IParser)!
+  public var parser: (any APPAnalyzeCore.Parser)!
   final public let config: APPAnalyzeCore.Configuration
   final public let ruleManager: APPAnalyzeCore.RuleManager
   final public let reporterManager: APPAnalyzeCore.ReporterManager

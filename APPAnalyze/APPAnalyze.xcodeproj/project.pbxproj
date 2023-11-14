@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C311A6A12A6A8B8300271609 /* MainCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311A6A02A6A8B8300271609 /* MainCommand.swift */; };
 		C3C5E4BE2B034E0900FAEC83 /* APPAnalyzeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5E4BD2B034E0900FAEC83 /* APPAnalyzeCore.framework */; };
+		C3C5E4C12B0350EB00FAEC83 /* CustomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E4C02B0350EB00FAEC83 /* CustomRule.swift */; };
+		C3C5E4C32B0350FF00FAEC83 /* CustomReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E4C22B0350FF00FAEC83 /* CustomReporter.swift */; };
+		C3C5E4C52B03510800FAEC83 /* CustomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E4C42B03510800FAEC83 /* CustomParser.swift */; };
 		C3F06F7C2A711B4F0052067E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C3F06F7B2A711B4F0052067E /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		C311A6A02A6A8B8300271609 /* MainCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCommand.swift; sourceTree = "<group>"; };
 		C38F6CA3280925FD005512BF /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
 		C3C5E4BD2B034E0900FAEC83 /* APPAnalyzeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APPAnalyzeCore.framework; sourceTree = "<group>"; };
+		C3C5E4C02B0350EB00FAEC83 /* CustomRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRule.swift; sourceTree = "<group>"; };
+		C3C5E4C22B0350FF00FAEC83 /* CustomReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomReporter.swift; sourceTree = "<group>"; };
+		C3C5E4C42B03510800FAEC83 /* CustomParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,9 @@
 			children = (
 				C3C5E4BD2B034E0900FAEC83 /* APPAnalyzeCore.framework */,
 				C311A6A02A6A8B8300271609 /* MainCommand.swift */,
+				C3C5E4C02B0350EB00FAEC83 /* CustomRule.swift */,
+				C3C5E4C22B0350FF00FAEC83 /* CustomReporter.swift */,
+				C3C5E4C42B03510800FAEC83 /* CustomParser.swift */,
 			);
 			path = APPAnalyzeCommand;
 			sourceTree = "<group>";
@@ -141,6 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C5E4C32B0350FF00FAEC83 /* CustomReporter.swift in Sources */,
+				C3C5E4C52B03510800FAEC83 /* CustomParser.swift in Sources */,
+				C3C5E4C12B0350EB00FAEC83 /* CustomRule.swift in Sources */,
 				C311A6A12A6A8B8300271609 /* MainCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +169,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/APPAnalyzeCommand",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -174,7 +186,7 @@
 					"$(PROJECT_DIR)/APPAnalyzeCommand",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;

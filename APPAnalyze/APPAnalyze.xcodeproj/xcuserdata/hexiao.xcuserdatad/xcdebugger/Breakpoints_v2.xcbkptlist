@@ -14,8 +14,8 @@
             filePath = "APPAnalyzeCommand/MainCommand.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "run()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "APPAnalyzeCommand/MainCommand.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "run()"
             landmarkType = "7">
          </BreakpointContent>
