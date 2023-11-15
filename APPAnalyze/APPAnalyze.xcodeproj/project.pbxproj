@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C311A6A12A6A8B8300271609 /* MainCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311A6A02A6A8B8300271609 /* MainCommand.swift */; };
-		C3C5E4BE2B034E0900FAEC83 /* APPAnalyzeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5E4BD2B034E0900FAEC83 /* APPAnalyzeCore.framework */; };
+		C39D50932B04A4110091F660 /* APPAnalyzeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5E4BD2B034E0900FAEC83 /* APPAnalyzeCore.framework */; };
+		C39D50942B04A4110091F660 /* APPAnalyzeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5E4BD2B034E0900FAEC83 /* APPAnalyzeCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3C5E4C12B0350EB00FAEC83 /* CustomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E4C02B0350EB00FAEC83 /* CustomRule.swift */; };
 		C3C5E4C32B0350FF00FAEC83 /* CustomReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E4C22B0350FF00FAEC83 /* CustomReporter.swift */; };
 		C3C5E4C52B03510800FAEC83 /* CustomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E4C42B03510800FAEC83 /* CustomParser.swift */; };
@@ -24,6 +25,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C39D50952B04A4110091F660 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C39D50942B04A4110091F660 /* APPAnalyzeCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -42,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C5E4BE2B034E0900FAEC83 /* APPAnalyzeCore.framework in Frameworks */,
+				C39D50932B04A4110091F660 /* APPAnalyzeCore.framework in Frameworks */,
 				C3F06F7C2A711B4F0052067E /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +109,7 @@
 				C311A69A2A6A8B8300271609 /* Sources */,
 				C311A69B2A6A8B8300271609 /* Frameworks */,
 				C311A69C2A6A8B8300271609 /* CopyFiles */,
+				C39D50952B04A4110091F660 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +182,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/APPAnalyzeCommand",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/APPAnalyzeCommand",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -186,6 +203,10 @@
 					"$(PROJECT_DIR)/APPAnalyzeCommand",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/APPAnalyzeCommand",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";

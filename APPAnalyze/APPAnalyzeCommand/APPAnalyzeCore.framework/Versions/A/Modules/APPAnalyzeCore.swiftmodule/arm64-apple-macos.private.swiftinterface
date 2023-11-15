@@ -7,7 +7,6 @@ import CommonCrypto
 import Foundation
 import OSLog
 import Swift
-import SwiftDemangle
 import SwiftyJSON
 import _Concurrency
 import _StringProcessing
@@ -165,6 +164,15 @@ public enum UnusedClassRule : APPAnalyzeCore.Rule {
   public static func check() async -> [any APPAnalyzeCore.IIssue]
   #endif
 }
+public enum PrintingError : Swift.String, Swift.Error {
+  case shouldBeHandleInPrintSpecializationPrefix
+  case unexpectedCaseNonDifferentiable
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public protocol Parser {
   #if compiler(>=5.3) && $AsyncAwait
   func parse() async -> [APPAnalyzeCore.ModuleInfo]
@@ -256,6 +264,11 @@ public enum Severity : Swift.String, Swift.Encodable {
     get
   }
 }
+public enum SwiftDemangleError : Swift.Error {
+  case oldDemanglerError(description: Swift.String, nodeDebugDescription: Swift.String)
+  case newDemanglerError(description: Swift.String, nodeDebugDescription: Swift.String)
+  case nodePrinterError(description: Swift.String, nodeDebugDescription: Swift.String)
+}
 @_hasMissingDesignatedInitializers public class APPAnalyze {
   public static let shared: APPAnalyzeCore.APPAnalyze
   public var parser: (any APPAnalyzeCore.Parser)!
@@ -312,10 +325,32 @@ public enum GlobalUnusedModuleRule : APPAnalyzeCore.Rule {
   #endif
 }
 public let PackedAssetImage: Swift.String
+extension Swift.String {
+  public var demangled: Swift.String {
+    get
+  }
+  public func demangling(_ options: APPAnalyzeCore.DemangleOptions) throws -> Swift.String
+}
 public enum RingDependencyRule : APPAnalyzeCore.Rule {
   #if compiler(>=5.3) && $AsyncAwait
   public static func check() async -> [any APPAnalyzeCore.IIssue]
   #endif
+}
+public protocol StringIntegerIndexable : Swift.StringProtocol {
+  subscript(indexRange: Swift.Range<Swift.Int>) -> Swift.Substring { get }
+  subscript(r: Swift.Range<Self.Index>) -> Swift.Substring { get }
+}
+extension APPAnalyzeCore.StringIntegerIndexable {
+  public subscript(index: Swift.Int) -> Swift.Character {
+    get
+  }
+  public subscript(indexRange: Swift.Range<Swift.Int>) -> Swift.Substring {
+    get
+  }
+}
+extension Swift.String : APPAnalyzeCore.StringIntegerIndexable {
+}
+extension Swift.Substring : APPAnalyzeCore.StringIntegerIndexable {
 }
 @_hasMissingDesignatedInitializers public class RuleManager {
   public var issues: [any APPAnalyzeCore.IIssue] {
@@ -324,6 +359,36 @@ public enum RingDependencyRule : APPAnalyzeCore.Rule {
   public func addRule(rule: any APPAnalyzeCore.Rule.Type)
   public func removeRule(rule: any APPAnalyzeCore.Rule.Type)
   @objc deinit
+}
+public struct DemangleOptions : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let synthesizeSugarOnTypes: APPAnalyzeCore.DemangleOptions
+  public static let qualifyEntities: APPAnalyzeCore.DemangleOptions
+  public static let displayExtensionContexts: APPAnalyzeCore.DemangleOptions
+  public static let displayUnmangledSuffix: APPAnalyzeCore.DemangleOptions
+  public static let displayModuleNames: APPAnalyzeCore.DemangleOptions
+  public static let displayGenericSpecializations: APPAnalyzeCore.DemangleOptions
+  public static let displayProtocolConformances: APPAnalyzeCore.DemangleOptions
+  public static let displayWhereClauses: APPAnalyzeCore.DemangleOptions
+  public static let displayEntityTypes: APPAnalyzeCore.DemangleOptions
+  public static let displayLocalNameContexts: APPAnalyzeCore.DemangleOptions
+  public static let shortenPartialApply: APPAnalyzeCore.DemangleOptions
+  public static let shortenThunk: APPAnalyzeCore.DemangleOptions
+  public static let shortenValueWitness: APPAnalyzeCore.DemangleOptions
+  public static let shortenArchetype: APPAnalyzeCore.DemangleOptions
+  public static let showPrivateDiscriminators: APPAnalyzeCore.DemangleOptions
+  public static let showFunctionArgumentTypes: APPAnalyzeCore.DemangleOptions
+  public static let displayDebuggerGeneratedModule: APPAnalyzeCore.DemangleOptions
+  public static let displayStdlibModule: APPAnalyzeCore.DemangleOptions
+  public static let displayObjCModule: APPAnalyzeCore.DemangleOptions
+  public static let printForTypeName: APPAnalyzeCore.DemangleOptions
+  public static let showAsyncResumePartial: APPAnalyzeCore.DemangleOptions
+  public static let defaultOptions: APPAnalyzeCore.DemangleOptions
+  public static let simplifiedOptions: APPAnalyzeCore.DemangleOptions
+  public typealias ArrayLiteralElement = APPAnalyzeCore.DemangleOptions
+  public typealias Element = APPAnalyzeCore.DemangleOptions
+  public typealias RawValue = Swift.Int
 }
 public enum ArchType : Swift.String {
   case arm64
@@ -370,6 +435,9 @@ public struct ObjCIvarRef : Swift.Hashable {
     set
   }
   @objc deinit
+}
+extension Swift.String {
+  public func classDemangling() -> [Swift.String]
 }
 public struct ObjcMethod {
   public let name: Swift.String
@@ -443,6 +511,9 @@ extension APPAnalyzeCore.ObjcCategory {
 extension APPAnalyzeCore.ImagesetScale : Swift.Equatable {}
 extension APPAnalyzeCore.ImagesetScale : Swift.Hashable {}
 extension APPAnalyzeCore.ImagesetScale : Swift.RawRepresentable {}
+extension APPAnalyzeCore.PrintingError : Swift.Equatable {}
+extension APPAnalyzeCore.PrintingError : Swift.Hashable {}
+extension APPAnalyzeCore.PrintingError : Swift.RawRepresentable {}
 extension APPAnalyzeCore.IssueType : Swift.Equatable {}
 extension APPAnalyzeCore.IssueType : Swift.Hashable {}
 extension APPAnalyzeCore.IssueType : Swift.RawRepresentable {}
