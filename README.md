@@ -32,7 +32,7 @@
 ``` shell
 $ APPAnalyzeCommand --help
 OPTIONS:
-  --version <version>     当前版本 1.0.0
+  --version <version>     当前版本 1.2.0
   --output <output>       输出文件目录。必传参数
   --config <config>       配置JSON文件地址。非必传参数
   --ipa <ipa>             ipa.app文件地址。必传参数
@@ -228,10 +228,8 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app --modules /Us
 ### 组件化工程扫描
 添加一些组件化扫描相关的规则。
 
-
 ###  对于 Swift 更好的支持
 对于`Swift`语言只要开启`XCode`编译优化以后就能在生成产物的时候支持无用代码的移除，包括`未使用类型`和`未使用方法`的自动移除，但是依然有部分场景不会进行优化。所以这一块也是后续完善的重点：
-- `未使用类` - 编译器不会对于未使用`class`进行移除，即使是继承`NSObject`的子类。
 - `未使用属性` - 编译器不会对于未使用`属性`进行移除，包括`class`和`struct`的属性。
 - `未使用方法` - 对于`class`的方法，编译器并不会进行移除，即使没有申明`@objc`进行消息派发。
 
