@@ -30,7 +30,7 @@
 
 ## 使用
 ``` shell
-$ APPAnalyzeCommand --help
+$ /Users/Test/APPAnalyzeCommand --help
 OPTIONS:
   --version <version>     当前版本 1.2.0
   --output <output>       输出文件目录。必传参数
@@ -42,7 +42,7 @@ OPTIONS:
 打开终端程序直接执行以下`shell`指令，即可生成`ipa`的包体积数据以及包体积待修复问题。
 > 提示：不能直接使用`AppStore`的包，`AppStore`的包需要砸壳。建议尽量使用XCode`Debug`的包。
 ``` shell
-APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
+/Users/Test/APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 ```
 > 提示：如果提示`permission denied`没有权限，执行`sudo chmod -R 777 /Users/a/Desktop/ipas/APPAnalyzeCommand`即可。双击`APPAnalyzeCommand`是否可以直接唤起终端程序。
 ### 生成产物
@@ -105,7 +105,7 @@ APPAnalyzeCommand --ipa ipas/JDAPP/JDAPP.app --output ipas/JDAPP
 
 ### 配置属性
 ``` shell
-APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /Users/Desktop/ipas/config.json --output /Users/Desktop/ipas/APPMobile
+/Users/Test/APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /Users/Desktop/ipas/config.json --output /Users/Desktop/ipas/APPMobile
 ```
 
 可基于自身项目需要，添加下列规则可配置参数。在使用`APPAnalyzeCommand`指令时添加`--config`配置文件地址。
@@ -163,7 +163,7 @@ APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app -config /User
 可以通过`modules`配置支持组件化工程的扫描，可以基于自身项目的组件化工程生成对应的`json`组件化配置，之后进行扫描
 ## 模块化扫描配置
 ``` shell
-APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app --modules /Users/Desktop/ipas/modules.json --output /Users/Desktop/ipas/APPMobile
+/Users/Test/APPAnalyzeCommand -ipa /Users/Desktop/ipas/APPMobile/APPMobile.app --modules /Users/Desktop/ipas/modules.json --output /Users/Desktop/ipas/APPMobile
 ```
 
 配置格式如下：

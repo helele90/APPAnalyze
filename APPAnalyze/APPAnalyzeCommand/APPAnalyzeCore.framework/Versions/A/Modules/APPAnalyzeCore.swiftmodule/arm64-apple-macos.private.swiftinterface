@@ -41,6 +41,7 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
+#warning("待修复，Swift类误报问题")
 extension Swift.String {
   public func lines(callback: (Swift.String) -> Swift.Void)
   public var fileName: Swift.String {
@@ -141,8 +142,6 @@ public protocol Reporter {
   #endif
 }
 @_hasMissingDesignatedInitializers public class ReporterManager {
-  #warning("outputPath")
-  public var outputPath: Swift.String
   public func addReporter(reporter: any APPAnalyzeCore.Reporter.Type)
   public func removeReporter(reporter: any APPAnalyzeCore.Reporter.Type)
   public func generateReport(text: Swift.String, fileName: Swift.String)
@@ -297,12 +296,13 @@ public protocol Rule {
   #endif
 }
 @_hasMissingDesignatedInitializers public class Configuration {
-  public var currentDirectoryPath: Swift.String {
-    get
-  }
+  public var currentDirectoryPath: Swift.String!
+  public var configPath: Swift.String?
   public var customConfig: SwiftyJSON.JSON? {
     get
   }
+  public var archType: APPAnalyzeCore.ArchType
+  public var reportOutputPath: Swift.String!
   @objc deinit
 }
 extension APPAnalyzeCore.Configuration {
@@ -325,6 +325,7 @@ public enum GlobalUnusedModuleRule : APPAnalyzeCore.Rule {
   #endif
 }
 public let PackedAssetImage: Swift.String
+#warning("解析 framework 里的资源")
 extension Swift.String {
   public var demangled: Swift.String {
     get

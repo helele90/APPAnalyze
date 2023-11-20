@@ -1,8 +1,8 @@
 //
 //  MainCommand.swift
-//  APPAnalyzeCommand
+//  BambooTool
 //
-//  Created by hexiao on 2023/4/18.
+//  Created by hexiao on 2022/4/18.
 //
 
 import APPAnalyzeCore
@@ -12,18 +12,20 @@ import Foundation
 @main
 struct MainCommand: AsyncParsableCommand {
 //    #if RELEASE
-        @Option(help: "当前版本1.2.0")
+        @Option(help: "当前版本1.3.0")
         var version: String?
     
 #if DEBUG
 
     var output: String = "/Users/hexiao/Desktop/ipas/pinduoduo3"
 
-    var config: String? = "/Users/hexiao/Desktop/ipas/config.json"
+    var config: String = "/Users/hexiao/Desktop/ipas/config.json"
 
     var ipa: String? = "/Users/hexiao/Desktop/ipas/pinduoduo/pinduoduo.app"
 
     var modules: String?
+    
+    var arch: String = "arm64"
 
 #endif
     
@@ -40,50 +42,45 @@ struct MainCommand: AsyncParsableCommand {
 
         @Option(help: "工程文件目录")
         var modules: String?
+    
+    @Option(help: "指令集架构：arm64、x86_64")
+    var arch: String = "arm64"
 
 #endif
 
     mutating func run() async throws {
         let date = Date()
         #if DEBUG
-        var arguments = ["/Users/hexiao/ibiu_project/JDLTAppModule/Example/TestOC"]
-        if let ipa = ipa {
-            arguments.append("-ipa")
-            arguments.append(ipa)
-        }
-        if let config = config {
-            arguments.append("-config")
-            arguments.append(config)
-        }
-        arguments.append("-output")
-        arguments.append(output)
-        CommandLine.arguments = arguments
+        CommandLine.arguments = ["/Users/hexiao/ibiu_project/JDLTAppModule/Example/TestOC", "-ipa", "/Users/hexiao/Desktop/ipas/pinduoduo/pinduoduo.app", "-config", "/Users/hexiao/Desktop/ipas/config.json", "--output", "/Users/hexiao/Desktop/ipas/pinduoduo2"]
         #endif
         //
         log("执行参数：\(CommandLine.arguments)")
         //
         let appAnalyze = APPAnalyze.shared
-        //
+        // 执行参数配置
+        let analyzeConfig = appAnalyze.config
+        analyzeConfig.archType = ArchType(rawValue: arch) ?? .arm64
+        var currentDirectoryPath = CommandLine.arguments[0]
+        var url = URL(string: currentDirectoryPath)!
+        url.deleteLastPathComponent()
+        currentDirectoryPath = url.absoluteString
+        analyzeConfig.currentDirectoryPath = currentDirectoryPath
+        analyzeConfig.configPath = config
+        analyzeConfig.reportOutputPath = output
+        // 解析器和规则配置
         if let modules = self.modules {
             appAnalyze.parser = ModuleFileParser(path: modules)
-            // 添加组件化工程检查
+            //
             let ruleManager = appAnalyze.ruleManager
             ruleManager.addRule(rule: DuplicateResourceInBundleRule.self)
             ruleManager.addRule(rule: RingDependencyRule.self)
             ruleManager.addRule(rule: UnusedModuleRule.self)
             ruleManager.addRule(rule: GlobalUnusedModuleRule.self)
-        } else if let ipa = self.ipa { // IPA 模式
+        } else if let ipa = self.ipa {
             appAnalyze.parser = IPAParser(appPath: ipa)
         } else {
             fatalError("参数错误")
         }
-#if DEBUG
-//        appAnalyze.parser = CustomParser()
-        appAnalyze.ruleManager.addRule(rule: CustomRule.self)
-        appAnalyze.reporterManager.addReporter(reporter: CustomReporter.self)
-#endif
-        //
-        appAnalyze.reporterManager.outputPath = output
         //
         await appAnalyze.run()
         //

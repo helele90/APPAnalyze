@@ -2963,92 +2963,6 @@
         "printedName": "ReporterManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "outputPath",
-            "printedName": "outputPath",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14APPAnalyzeCore15ReporterManagerC10outputPathSSvp",
-            "mangledName": "$s14APPAnalyzeCore15ReporterManagerC10outputPathSSvp",
-            "moduleName": "APPAnalyzeCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore15ReporterManagerC10outputPathSSvg",
-                "mangledName": "$s14APPAnalyzeCore15ReporterManagerC10outputPathSSvg",
-                "moduleName": "APPAnalyzeCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore15ReporterManagerC10outputPathSSvs",
-                "mangledName": "$s14APPAnalyzeCore15ReporterManagerC10outputPathSSvs",
-                "moduleName": "APPAnalyzeCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore15ReporterManagerC10outputPathSSvM",
-                "mangledName": "$s14APPAnalyzeCore15ReporterManagerC10outputPathSSvM",
-                "moduleName": "APPAnalyzeCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "addReporter",
             "printedName": "addReporter(reporter:)",
@@ -6820,19 +6734,26 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSvp",
-            "mangledName": "$s14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSvp",
+            "usr": "s:14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvp",
+            "mangledName": "$s14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvp",
             "moduleName": "APPAnalyzeCore",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -6844,17 +6765,186 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvg",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvg",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvs",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvs",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvM",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSSgvM",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configPath",
+            "printedName": "configPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14APPAnalyzeCore13ConfigurationC10configPathSSSgvp",
+            "mangledName": "$s14APPAnalyzeCore13ConfigurationC10configPathSSSgvp",
+            "moduleName": "APPAnalyzeCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSvg",
-                "mangledName": "$s14APPAnalyzeCore13ConfigurationC20currentDirectoryPathSSvg",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC10configPathSSSgvg",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC10configPathSSSgvg",
                 "moduleName": "APPAnalyzeCore",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC10configPathSSSgvs",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC10configPathSSSgvs",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC10configPathSSSgvM",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC10configPathSSSgvM",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -6916,6 +7006,204 @@
                 "moduleName": "APPAnalyzeCore",
                 "implicit": true,
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "archType",
+            "printedName": "archType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArchType",
+                "printedName": "APPAnalyzeCore.ArchType",
+                "usr": "s:14APPAnalyzeCore8ArchTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0Ovp",
+            "mangledName": "$s14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0Ovp",
+            "moduleName": "APPAnalyzeCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArchType",
+                    "printedName": "APPAnalyzeCore.ArchType",
+                    "usr": "s:14APPAnalyzeCore8ArchTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0Ovg",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0Ovg",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArchType",
+                    "printedName": "APPAnalyzeCore.ArchType",
+                    "usr": "s:14APPAnalyzeCore8ArchTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0Ovs",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0Ovs",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0OvM",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC8archTypeAA04ArchE0OvM",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reportOutputPath",
+            "printedName": "reportOutputPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvp",
+            "mangledName": "$s14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvp",
+            "moduleName": "APPAnalyzeCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvg",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvg",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvs",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvs",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvM",
+                "mangledName": "$s14APPAnalyzeCore13ConfigurationC16reportOutputPathSSSgvM",
+                "moduleName": "APPAnalyzeCore",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -14594,51 +14882,23 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
       "kind": "Array",
-      "offset": 1215,
+      "offset": 1261,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
       "kind": "Array",
-      "offset": 1332,
+      "offset": 1378,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
       "kind": "Array",
-      "offset": 1525,
+      "offset": 1571,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
-      "kind": "StringLiteral",
-      "offset": 2287,
-      "length": 4,
-      "value": "\"pg\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
-      "kind": "StringLiteral",
-      "offset": 2377,
-      "length": 14,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
-      "kind": "StringLiteral",
-      "offset": 2385,
-      "length": 1,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/DynamicUseObjCClassRule.swift",
-      "kind": "StringLiteral",
-      "offset": 2390,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/String+Analyze.swift",
@@ -15035,72 +15295,107 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
       "kind": "StringLiteral",
-      "offset": 3154,
-      "length": 23,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3162,
-      "length": 1,
-      "value": "\"\/Contents.json\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "Array",
-      "offset": 3415,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3509,
-      "length": 15,
-      "value": "\"Contents.json\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3540,
-      "length": 11,
-      "value": "\".DS_Store\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3697,
-      "length": 22,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3705,
-      "length": 1,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3718,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
-      "kind": "StringLiteral",
-      "offset": 4050,
+      "offset": 3173,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 4136,
+      "offset": 3259,
       "length": 2,
       "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 3389,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 3397,
+      "length": 1,
+      "value": "\"\/Contents.json\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "Array",
+      "offset": 3567,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "Array",
+      "offset": 3717,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 3790,
+      "length": 20,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 3798,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 3809,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "Array",
+      "offset": 4379,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 4473,
+      "length": 15,
+      "value": "\"Contents.json\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 4504,
+      "length": 11,
+      "value": "\".DS_Store\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 4661,
+      "length": 22,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 4669,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/XCAssetsTool.swift",
+      "kind": "StringLiteral",
+      "offset": 4682,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Size\/UnusedImagesetRule.swift",
@@ -15399,70 +15694,63 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 414,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
-      "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 619,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 633,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 662,
+      "offset": 665,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1366,
+      "offset": 1369,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1380,
+      "offset": 1383,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1392,
+      "offset": 1395,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 1584,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1598,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/ReporterManager.swift",
       "kind": "StringLiteral",
-      "offset": 1607,
+      "offset": 1610,
       "length": 1,
       "value": "\"\""
     },
@@ -27558,2128 +27846,2093 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 1484,
+      "offset": 1455,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 1497,
+      "offset": 1468,
       "length": 1,
       "value": "\":解析 __DATA Objective-C Segment\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 1626,
+      "offset": 1597,
       "length": 36,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 1639,
+      "offset": 1610,
       "length": 1,
       "value": "\":解析 __TEXT Section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1799,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 1841,
+      "offset": 1812,
       "length": 1,
       "value": "\":解析 __TEXT __cstring\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2067,
+      "offset": 2038,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2119,
+      "offset": 2090,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2167,
+      "offset": 2138,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 3330,
-      "length": 15,
-      "value": "\"\/usr\/bin\/file\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3397,
-      "length": 35,
-      "value": "\"dynamically linked shared library\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3596,
-      "length": 15,
-      "value": "\"\/usr\/bin\/lipo\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3625,
-      "length": 7,
-      "value": "\"-info\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 3672,
-      "length": 7,
-      "value": "\"arm64\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 4061,
+      "offset": 3303,
       "length": 4,
       "value": "\"-v\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4067,
+      "offset": 3309,
       "length": 4,
       "value": "\"-X\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4073,
+      "offset": 3315,
       "length": 4,
       "value": "\"-s\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4079,
+      "offset": 3321,
       "length": 8,
       "value": "\"__TEXT\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4089,
+      "offset": 3331,
       "length": 11,
       "value": "\"__cstring\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4336,
+      "offset": 3578,
       "length": 4,
       "value": "\"-v\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4342,
+      "offset": 3584,
       "length": 4,
       "value": "\"-X\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4348,
+      "offset": 3590,
       "length": 4,
       "value": "\"-s\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4354,
+      "offset": 3596,
       "length": 10,
       "value": "\"__RODATA\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4366,
+      "offset": 3608,
       "length": 11,
       "value": "\"__cstring\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4451,
+      "offset": 3693,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 4503,
+      "offset": 3745,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 4595,
+      "offset": 3837,
       "length": 6,
       "value": "\"_TtC\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 5324,
+      "offset": 4568,
       "length": 7,
       "value": "\"-arch\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 5399,
+      "offset": 4643,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 5510,
+      "offset": 4754,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 5543,
+      "offset": 4787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 5596,
+      "offset": 4840,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 5629,
+      "offset": 4873,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 5676,
+      "offset": 4920,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 5722,
+      "offset": 4966,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "FloatLiteral",
-      "offset": 5892,
+      "offset": 5136,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 5973,
+      "offset": 5217,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 6041,
+      "offset": 5285,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 6068,
+      "offset": 5312,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 6159,
+      "offset": 5403,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 6192,
+      "offset": 5436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 6239,
+      "offset": 5483,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 6285,
+      "offset": 5529,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "FloatLiteral",
-      "offset": 6386,
+      "offset": 5630,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 6414,
+      "offset": 5658,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 6533,
+      "offset": 5777,
       "length": 3,
       "value": "\"(\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 6605,
+      "offset": 5849,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 6671,
+      "offset": 5915,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 7202,
+      "offset": 6446,
       "length": 5,
       "value": "\"-oV\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 7414,
+      "offset": 6658,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 7465,
+      "offset": 6709,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 7516,
+      "offset": 6760,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Dictionary",
-      "offset": 7575,
+      "offset": 6819,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 7603,
+      "offset": 6847,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 7631,
+      "offset": 6875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 7664,
+      "offset": 6908,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 7696,
+      "offset": 6940,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 7731,
+      "offset": 6975,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 7758,
+      "offset": 7002,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 7863,
+      "offset": 7107,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 7915,
+      "offset": 7159,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 7945,
+      "offset": 7189,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 7994,
+      "offset": 7238,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8037,
+      "offset": 7281,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8082,
+      "offset": 7326,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8120,
+      "offset": 7364,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Dictionary",
-      "offset": 8175,
+      "offset": 7419,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8269,
+      "offset": 7513,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 8296,
+      "offset": 7540,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8344,
+      "offset": 7588,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8400,
+      "offset": 7644,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8457,
+      "offset": 7701,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8502,
+      "offset": 7746,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 8555,
+      "offset": 7799,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
+      "offset": 7841,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 7939,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "StringLiteral",
+      "offset": 8012,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "StringLiteral",
+      "offset": 8038,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 8087,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 8133,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 8173,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 8228,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 8282,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Array",
+      "offset": 8343,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "Dictionary",
+      "offset": 8399,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8444,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8579,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
+      "kind": "StringLiteral",
       "offset": 8597,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 8695,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 8768,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 8794,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 8843,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 8889,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 8929,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 8984,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 9038,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Array",
-      "offset": 9099,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "Dictionary",
-      "offset": 9155,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9200,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9335,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 9353,
       "length": 5,
       "value": "\"Con\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9376,
+      "offset": 8620,
       "length": 9,
       "value": "\"section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9423,
+      "offset": 8667,
       "length": 20,
       "value": "\"classlist) section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9529,
+      "offset": 8773,
       "length": 20,
       "value": "\"classrefs) section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9635,
+      "offset": 8879,
       "length": 20,
       "value": "\"superrefs) section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9741,
+      "offset": 8985,
       "length": 18,
       "value": "\"catlist) section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9843,
+      "offset": 9087,
       "length": 20,
       "value": "\"protolist) section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 9949,
+      "offset": 9193,
       "length": 18,
       "value": "\"selrefs) section\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 10213,
+      "offset": 9457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 10255,
+      "offset": 9499,
       "length": 4,
       "value": "\"00\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 10914,
+      "offset": 10158,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 10993,
+      "offset": 10237,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 11044,
+      "offset": 10288,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 11418,
+      "offset": 10662,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 11465,
+      "offset": 10709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 11587,
+      "offset": 10831,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 11619,
+      "offset": 10863,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 11681,
+      "offset": 10925,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 11730,
+      "offset": 10974,
       "length": 12,
       "value": "\"Meta Class\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 11782,
+      "offset": 11026,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 11898,
+      "offset": 11142,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 11940,
+      "offset": 11184,
       "length": 12,
       "value": "\"superclass\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 12054,
+      "offset": 11298,
       "length": 17,
       "value": "\" _OBJC_CLASS_$_\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 12387,
+      "offset": 11631,
       "length": 5,
       "value": "\" _$\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 12883,
+      "offset": 12127,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 12915,
+      "offset": 12159,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 12975,
+      "offset": 12219,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 13052,
+      "offset": 12296,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 13309,
+      "offset": 12553,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 13351,
+      "offset": 12595,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 13423,
+      "offset": 12667,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 13455,
+      "offset": 12699,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 13514,
+      "offset": 12758,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 13811,
+      "offset": 13055,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 14149,
+      "offset": 13393,
       "length": 13,
       "value": "\"baseMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 14295,
+      "offset": 13539,
       "length": 15,
       "value": "\"baseProtocols\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 14445,
+      "offset": 13689,
       "length": 7,
       "value": "\"ivars\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 14579,
+      "offset": 13823,
       "length": 16,
       "value": "\"baseProperties\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 14744,
+      "offset": 13988,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 14872,
+      "offset": 14116,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 14948,
+      "offset": 14192,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 14980,
+      "offset": 14224,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 15048,
+      "offset": 14292,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 15136,
+      "offset": 14380,
       "length": 5,
       "value": "\"(0x\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 15485,
+      "offset": 14729,
       "length": 5,
       "value": "\"imp\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 15540,
+      "offset": 14784,
       "length": 4,
       "value": "\":]\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 15618,
+      "offset": 14862,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 15650,
+      "offset": 14894,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 15755,
+      "offset": 14999,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 16253,
+      "offset": 15497,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 16329,
+      "offset": 15573,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 16361,
+      "offset": 15605,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 16539,
+      "offset": 15783,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 16615,
+      "offset": 15859,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 16647,
+      "offset": 15891,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 16823,
+      "offset": 16067,
       "length": 5,
       "value": "\"@\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 16931,
+      "offset": 16175,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 17029,
+      "offset": 16273,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 17420,
+      "offset": 16664,
       "length": 20,
       "value": "\"type为空-\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 17439,
+      "offset": 16683,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 17582,
+      "offset": 16826,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 17658,
+      "offset": 16902,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 17690,
+      "offset": 16934,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 17756,
+      "offset": 17000,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 17809,
+      "offset": 17053,
       "length": 12,
       "value": "\"attributes\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 17906,
+      "offset": 17150,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 17911,
+      "offset": 17155,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 18016,
+      "offset": 17260,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 18071,
+      "offset": 17315,
       "length": 6,
       "value": "\"T@\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 18113,
+      "offset": 17357,
       "length": 5,
       "value": "\"\",\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 18221,
+      "offset": 17465,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 19033,
+      "offset": 18277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 19219,
+      "offset": 18463,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 19349,
+      "offset": 18593,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 19425,
+      "offset": 18669,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 19457,
+      "offset": 18701,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 19524,
+      "offset": 18768,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 19788,
+      "offset": 19032,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 19830,
+      "offset": 19074,
       "length": 4,
       "value": "\"00\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 20232,
+      "offset": 19476,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 20274,
+      "offset": 19518,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 20814,
+      "offset": 20058,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 20968,
+      "offset": 20212,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 21044,
+      "offset": 20288,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 21076,
+      "offset": 20320,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 21132,
+      "offset": 20376,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 21195,
+      "offset": 20439,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 21272,
+      "offset": 20516,
       "length": 15,
       "value": "\"catName错误\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 21368,
+      "offset": 20612,
       "length": 5,
       "value": "\"cls\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 21445,
+      "offset": 20689,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 21477,
+      "offset": 20721,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 21536,
+      "offset": 20780,
       "length": 4,
       "value": "\"0x\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 21856,
+      "offset": 21100,
       "length": 16,
       "value": "\"_OBJC_CLASS_$_\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 22169,
+      "offset": 21413,
       "length": 11,
       "value": "\"protocols\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 22305,
+      "offset": 21549,
       "length": 17,
       "value": "\"instanceMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 22453,
+      "offset": 21697,
       "length": 14,
       "value": "\"classMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 22595,
+      "offset": 21839,
       "length": 20,
       "value": "\"instanceProperties\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 22762,
+      "offset": 22006,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 22903,
+      "offset": 22147,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 22979,
+      "offset": 22223,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 23011,
+      "offset": 22255,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 23079,
+      "offset": 22323,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 23136,
+      "offset": 22380,
       "length": 5,
       "value": "\"(0x\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 23509,
+      "offset": 22753,
       "length": 5,
       "value": "\"imp\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 23564,
+      "offset": 22808,
       "length": 4,
       "value": "\":]\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 23642,
+      "offset": 22886,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 23674,
+      "offset": 22918,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 23779,
+      "offset": 23023,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 24314,
+      "offset": 23558,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 24390,
+      "offset": 23634,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 24422,
+      "offset": 23666,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 24488,
+      "offset": 23732,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 24541,
+      "offset": 23785,
       "length": 12,
       "value": "\"attributes\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 24638,
+      "offset": 23882,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 24643,
+      "offset": 23887,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 24729,
+      "offset": 23973,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 24898,
+      "offset": 24142,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 25045,
+      "offset": 24289,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 25165,
+      "offset": 24409,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 25241,
+      "offset": 24485,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 25273,
+      "offset": 24517,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 25340,
+      "offset": 24584,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 25605,
+      "offset": 24849,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 25647,
+      "offset": 24891,
       "length": 4,
       "value": "\"00\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 26175,
+      "offset": 25419,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 26667,
+      "offset": 25911,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 26709,
+      "offset": 25953,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 26781,
+      "offset": 26025,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 26813,
+      "offset": 26057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 26872,
+      "offset": 26116,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 26970,
+      "offset": 26214,
       "length": 11,
       "value": "\"protocols\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 27108,
+      "offset": 26352,
       "length": 17,
       "value": "\"instanceMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 27258,
+      "offset": 26502,
       "length": 14,
       "value": "\"classMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 27402,
+      "offset": 26646,
       "length": 25,
       "value": "\"optionalInstanceMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 27568,
+      "offset": 26812,
       "length": 22,
       "value": "\"optionalClassMethods\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 27728,
+      "offset": 26972,
       "length": 20,
       "value": "\"instanceProperties\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 27897,
+      "offset": 27141,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 28025,
+      "offset": 27269,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 28101,
+      "offset": 27345,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 28133,
+      "offset": 27377,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 28201,
+      "offset": 27445,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 28381,
+      "offset": 27625,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 28457,
+      "offset": 27701,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 28489,
+      "offset": 27733,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 28557,
+      "offset": 27801,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 28745,
+      "offset": 27989,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 28821,
+      "offset": 28065,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 28853,
+      "offset": 28097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 28921,
+      "offset": 28165,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29117,
+      "offset": 28361,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29193,
+      "offset": 28437,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 29225,
+      "offset": 28469,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 29293,
+      "offset": 28537,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29484,
+      "offset": 28728,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29560,
+      "offset": 28804,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 29592,
+      "offset": 28836,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 29658,
+      "offset": 28902,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29711,
+      "offset": 28955,
       "length": 12,
       "value": "\"attributes\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29808,
+      "offset": 29052,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 29813,
+      "offset": 29057,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 29899,
+      "offset": 29143,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 30070,
+      "offset": 29314,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 30216,
+      "offset": 29460,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 30338,
+      "offset": 29582,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 30414,
+      "offset": 29658,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 30446,
+      "offset": 29690,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 30513,
+      "offset": 29757,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 30821,
+      "offset": 30065,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 30853,
+      "offset": 30097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 30909,
+      "offset": 30153,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 31057,
+      "offset": 30301,
       "length": 16,
       "value": "\"_OBJC_CLASS_$_\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 31388,
+      "offset": 30632,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 31393,
+      "offset": 30637,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 33386,
+      "offset": 32630,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 33399,
+      "offset": 32643,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 33420,
+      "offset": 32664,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 33941,
+      "offset": 33185,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 33959,
+      "offset": 33203,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 33972,
+      "offset": 33216,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 33989,
+      "offset": 33233,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 34051,
+      "offset": 33295,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 34095,
+      "offset": 33339,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 34133,
+      "offset": 33377,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "Array",
-      "offset": 34175,
+      "offset": 33419,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 34271,
+      "offset": 33515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 34359,
+      "offset": 33603,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 34409,
+      "offset": 33653,
       "length": 11,
       "value": "\"dealloc]:\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 34465,
+      "offset": 33709,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 34552,
+      "offset": 33796,
       "length": 5,
       "value": "\"_$s\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 34632,
+      "offset": 33876,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 34702,
+      "offset": 33946,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 34942,
+      "offset": 34186,
       "length": 6,
       "value": "\"bl\t\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 34951,
+      "offset": 34195,
       "length": 9,
       "value": "\"callq\t\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 35043,
+      "offset": 34287,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 35379,
+      "offset": 34623,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 35505,
+      "offset": 34749,
       "length": 4,
       "value": "\"_$\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 36074,
+      "offset": 35318,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 36160,
+      "offset": 35404,
       "length": 8,
       "value": "\"adrp\t\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 36171,
+      "offset": 35415,
       "length": 8,
       "value": "\"movq\t\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 36262,
+      "offset": 35506,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 36604,
+      "offset": 35848,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 36761,
+      "offset": 36005,
       "length": 12,
       "value": "\"_OBJC_IVAR\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 36901,
+      "offset": 36145,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 37053,
+      "offset": 36297,
       "length": 4,
       "value": "\"._\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 37354,
+      "offset": 36598,
       "length": 10,
       "value": "\"@GOTPAGE\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 37454,
+      "offset": 36698,
       "length": 2,
       "value": "-8"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 37515,
+      "offset": 36759,
       "length": 7,
       "value": "\"@PAGE\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 37612,
+      "offset": 36856,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 37785,
+      "offset": 37029,
       "length": 3,
       "value": "-15"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 37962,
+      "offset": 37206,
       "length": 4,
       "value": "\"(%\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 38875,
+      "offset": 38119,
       "length": 4,
       "value": "\"-x\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 38881,
+      "offset": 38125,
       "length": 4,
       "value": "\"-V\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 38887,
+      "offset": 38131,
       "length": 7,
       "value": "\"-arch\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 39098,
+      "offset": 38342,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 39237,
+      "offset": 38481,
       "length": 19,
       "value": "\"_OBJC_$_CATEGORY_\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 39276,
+      "offset": 38520,
       "length": 12,
       "value": "\"_CATEGORY_\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/MachoTool.swift",
       "kind": "StringLiteral",
-      "offset": 39321,
+      "offset": 38565,
       "length": 5,
       "value": "\"_$_\""
     },
@@ -31884,98 +32137,105 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 443,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
       "length": 9,
       "value": "\".bundle\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 540,
       "length": 28,
       "value": "\"Bundle目录错误:\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 565,
+      "offset": 567,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 674,
       "length": 2,
       "value": "-7"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "Array",
-      "offset": 832,
+      "offset": 834,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "Array",
-      "offset": 893,
+      "offset": 895,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "Array",
-      "offset": 943,
+      "offset": 945,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "Array",
-      "offset": 991,
+      "offset": 993,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "BooleanLiteral",
-      "offset": 1068,
+      "offset": 1070,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1106,
       "length": 20,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 1112,
+      "offset": 1114,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1125,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 1390,
+      "offset": 1392,
       "length": 12,
       "value": "\"Assets.car\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/BundleTool.swift",
       "kind": "StringLiteral",
-      "offset": 1558,
+      "offset": 1560,
       "length": 3,
       "value": "\"\/\""
     },
@@ -33189,20 +33449,6 @@
       "offset": 285,
       "length": 3,
       "value": "\"l\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/APPAnalyze.swift",
-      "kind": "StringLiteral",
-      "offset": 830,
-      "length": 21,
-      "value": "\"需要设置 parser\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/APPAnalyze.swift",
-      "kind": "StringLiteral",
-      "offset": 945,
-      "length": 25,
-      "value": "\"需要设置 outputPath\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Rules\/Safe\/UnimplementedObjCProtocolMethodRule.swift",
@@ -37372,175 +37618,175 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 221,
+      "offset": 241,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 258,
+      "offset": 277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 294,
+      "offset": 318,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 335,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 537,
-      "length": 1,
-      "value": "0"
+      "offset": 700,
+      "length": 21,
+      "value": "\"需要设置 parser\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 757,
-      "length": 8,
-      "value": "\"config\""
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 824,
-      "length": 1,
-      "value": "1"
+      "offset": 809,
+      "length": 34,
+      "value": "\"currentDirectoryPath参数错误\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
+      "offset": 1106,
+      "length": 38,
+      "value": "\"config路径错误或格式不正确\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1242,
+      "length": 30,
+      "value": "\"reportOutputPath路径错误\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
       "length": 23,
       "value": "\"\/usr\/bin\/xcode-select\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "Array",
-      "offset": 1147,
+      "offset": 1407,
       "length": 6,
       "value": "[\"-p\"]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1186,
+      "offset": 1446,
       "length": 64,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1459,
       "length": 1,
       "value": "\"\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/otool\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1270,
+      "offset": 1530,
       "length": 63,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1543,
       "length": 1,
       "value": "\"\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/size\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 1618,
       "length": 68,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1631,
       "length": 1,
       "value": "\"\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/assetutil\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1526,
+      "offset": 1786,
       "length": 16,
       "value": "\"\/usr\/bin\/otool\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1639,
+      "offset": 1899,
       "length": 15,
       "value": "\"\/usr\/bin\/size\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 2021,
       "length": 20,
       "value": "\"\/usr\/bin\/assetutil\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 2066,
       "length": 34,
       "value": "\"otool环境地址：\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1839,
+      "offset": 2099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1856,
+      "offset": 2116,
       "length": 32,
       "value": "\"size环境地址：\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1887,
+      "offset": 2147,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1904,
+      "offset": 2164,
       "length": 42,
       "value": "\"assetutil环境地址：\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1945,
+      "offset": 2205,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 2042,
+      "offset": 2302,
       "length": 7,
       "value": "\"rules\""
     },
@@ -38730,91 +38976,70 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 652,
       "length": 22,
       "value": "\"systemFrameworkPaths\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 661,
+      "offset": 704,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 859,
+      "offset": 902,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 876,
+      "offset": 919,
       "length": 1,
       "value": "\":解析系统库\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 1115,
+      "offset": 1158,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 1389,
+      "offset": 1432,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 2581,
+      "offset": 2624,
       "length": 14,
       "value": "\"modules.json\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 2811,
+      "offset": 2854,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2904,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 2876,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
-      "kind": "Array",
-      "offset": 2918,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
-      "kind": "Array",
-      "offset": 2933,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
-      "kind": "Array",
-      "offset": 2948,
+      "offset": 2919,
       "length": 2,
       "value": "[]"
     },
@@ -38828,252 +39053,287 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 2979,
+      "offset": 2976,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
+      "kind": "Array",
+      "offset": 2991,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
+      "kind": "Array",
+      "offset": 3004,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
+      "kind": "Array",
+      "offset": 3022,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 2994,
+      "offset": 3037,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 3013,
+      "offset": 3056,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 3023,
+      "offset": 3066,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 3041,
+      "offset": 3084,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 3132,
+      "offset": 3175,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 3149,
+      "offset": 3192,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 3855,
+      "offset": 3966,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 3899,
+      "offset": 4010,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 3916,
+      "offset": 4027,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 3933,
+      "offset": 4044,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4171,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4477,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 4445,
+      "offset": 4619,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 4823,
+      "offset": 4997,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 4838,
+      "offset": 5012,
       "length": 1,
       "value": "\":解析资源\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 4894,
+      "offset": 5068,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 4925,
+      "offset": 5099,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 4976,
+      "offset": 5150,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 5029,
+      "offset": 5203,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 5084,
+      "offset": 5258,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 5290,
+      "offset": 5464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 5533,
+      "offset": 5707,
       "length": 12,
       "value": "\"Frameworks\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 5572,
+      "offset": 5746,
       "length": 16,
       "value": "\"_CodeSignature\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 5615,
+      "offset": 5789,
       "length": 9,
       "value": "\"PlugIns\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 5651,
+      "offset": 5825,
       "length": 9,
       "value": "\"SC_Info\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 5781,
+      "offset": 5955,
       "length": 14,
       "value": "\".storyboardc\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 5935,
+      "offset": 6109,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 6254,
+      "offset": 6428,
       "length": 9,
       "value": "\".bundle\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 6670,
+      "offset": 6844,
       "length": 11,
       "value": "\".xcassets\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "Array",
-      "offset": 7177,
+      "offset": 7351,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 7257,
+      "offset": 7431,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 7272,
+      "offset": 7446,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 7283,
+      "offset": 7457,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 7582,
+      "offset": 7756,
       "length": 12,
       "value": "\"Assets.car\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 7962,
+      "offset": 8136,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "StringLiteral",
-      "offset": 8026,
+      "offset": 8200,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/ModuleParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 8557,
+      "offset": 8731,
       "length": 1,
       "value": "0"
     },
@@ -39241,56 +39501,70 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 831,
+      "length": 30,
+      "value": "\"Command执行错误-\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 1041,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
+      "kind": "StringLiteral",
+      "offset": 1265,
       "length": 43,
       "value": "\"错误输出:-\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 1073,
+      "offset": 1292,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 1088,
+      "offset": 1307,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1365,
       "length": 25,
       "value": "\"空输出:-\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 1170,
+      "offset": 1389,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1441,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Tool\/Command.swift",
       "kind": "IntegerLiteral",
-      "offset": 1297,
+      "offset": 1516,
       "length": 2,
       "value": "-1"
     },
@@ -41677,14 +41951,14 @@
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Model\/MachO.swift",
       "kind": "BooleanLiteral",
-      "offset": 2660,
+      "offset": 2658,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hexiao\/ibiu_project\/APPAnalyze\/APPAnalyzeCore\/Model\/MachO.swift",
       "kind": "Array",
-      "offset": 2791,
+      "offset": 2789,
       "length": 2,
       "value": "[]"
     },
