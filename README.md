@@ -225,7 +225,3 @@ OPTIONS:
 
 # 相关链接
 - [iOS 包体积分析工具](https://juejin.cn/spost/7273740834201600063)
-
-# 反馈交流群
-
-![11701136673_.pic.jpg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ac06e69903e54afc9a25206469c36cb2~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=930&h=1482&s=188171&e=jpg&b=fefefe)
