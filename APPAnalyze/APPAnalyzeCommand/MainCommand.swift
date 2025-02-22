@@ -12,7 +12,7 @@ import Foundation
 @main
 struct MainCommand: AsyncParsableCommand {
 //    #if RELEASE
-        @Option(help: "当前版本1.3.0")
+        @Option(help: "当前版本1.3.1")
         var version: String?
     
 #if DEBUG
@@ -47,6 +47,8 @@ struct MainCommand: AsyncParsableCommand {
     var arch: String = "arm64"
 
 #endif
+    
+//    /Users/hexiao/Desktop/ipas/1.2.0/APPAnalyzeCommand --ipa /Users/hexiao/Desktop/ipas/pinduoduo/pinduoduo.app --config /Users/hexiao/Desktop/ipas/config.json --output /Users/hexiao/Desktop/ipas/pinduoduo/APPAnalyze
 
     mutating func run() async throws {
         let date = Date()

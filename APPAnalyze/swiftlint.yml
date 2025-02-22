@@ -56,7 +56,7 @@ opt_in_rules: # some rules are only opt-in
 #included: # paths to include during linting. `--path` is ignored if present.
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
-  - Example
+  - APPAnalyzeCore/SwiftDemangle
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
   - explicit_self
 
@@ -91,17 +91,3 @@ type_body_length:
   - 400 # error
 # or they can set both explicitly
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
-
-custom_rules:
-  disable_print:
-    included: ".*\\.swift"
-    name: "print usage"
-    regex: "((\\bprint)|(Swift\\.print))\\s*\\("
-    message: "Prefer os_log over print"
-    severity: error
-  disable_mask:
-    included: ".*\\.swift"
-    name: "mask usage"
-    regex: "((\\bprint)|(Swift\\.print))\\s*\\("
-    message: "使用mask需要注意性能"
-    severity: warning
