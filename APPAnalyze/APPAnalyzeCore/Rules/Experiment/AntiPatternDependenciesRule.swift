@@ -9,7 +9,7 @@
 //
 //#warning("支持json配置")
 //
-//private let componentDepth: [String: Int] = ["pgBFoundationModule": 1, "pgUIKitModule": 2, "pgHermesModule": 2, "pgNavigationModule": 2, "pgImageModule": 2, "pgNetworkModule": 2, "pgDynamicFloorModule": 2, "pgCacheModule": 2, "pgBusinessComponentModule": 3, "JDBRouterModule": 3, "pgUniformRecommendModule": 3, "pgServiceModule": 3]
+//private let componentDepth: [String: Int] = []
 //
 //struct AntiPatternDependenciesIssue: IIssue {
 //    let name: String = "AntiPatternDependencies"
