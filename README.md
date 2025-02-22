@@ -227,5 +227,5 @@ OPTIONS:
 - [iOS 包体积分析工具](https://juejin.cn/spost/7273740834201600063)
 
 # 贡献者
-- [helele90](https://github.com/helele90)
-- [harry](https://github.com/erduoniba)
+- [Helele](https://github.com/helele90)
+- [Harry](https://github.com/erduoniba)
