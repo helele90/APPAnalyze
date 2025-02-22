@@ -65,8 +65,6 @@
 		C36F49DC2AF8DE4C0056CCA7 /* LoadObjCClassRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F49A42AF8DE4C0056CCA7 /* LoadObjCClassRule.swift */; };
 		C36F49DD2AF8DE4C0056CCA7 /* DynamicFrameworkRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F49A52AF8DE4C0056CCA7 /* DynamicFrameworkRule.swift */; };
 		C36F49DE2AF8DE9E0056CCA7 /* APPAnalyzeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F495B2AF8DE220056CCA7 /* APPAnalyzeCore.framework */; };
-		C36F49DF2AF8DEA50056CCA7 /* APPAnalyzeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F495B2AF8DE220056CCA7 /* APPAnalyzeCore.framework */; };
-		C37E03592A495E1D004839BA /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C37E03582A495E1D004839BA /* ArgumentParser */; };
 		C395AA092B04A6190034B8E0 /* Punycode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395A9E72B04A6190034B8E0 /* Punycode.swift */; };
 		C395AA0A2B04A6190034B8E0 /* String+Demange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395A9E82B04A6190034B8E0 /* String+Demange.swift */; };
 		C395AA0B2B04A6190034B8E0 /* String+Demangling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395A9EA2B04A6190034B8E0 /* String+Demangling.swift */; };
@@ -109,26 +107,10 @@
 			remoteGlobalIDString = C36F495A2AF8DE220056CCA7;
 			remoteInfo = APPAnalyzeCore;
 		};
-		C36F49E52AF8F2440056CCA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C38105C52716A9B1000459E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C36F495A2AF8DE220056CCA7;
-			remoteInfo = APPAnalyzeCore;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C311A69C2A6A8B8300271609 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		C38105CB2716A9B1000459E1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -199,7 +181,6 @@
 		C36F49A22AF8DE4C0056CCA7 /* UnusedImagesetRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnusedImagesetRule.swift; sourceTree = "<group>"; };
 		C36F49A42AF8DE4C0056CCA7 /* LoadObjCClassRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadObjCClassRule.swift; sourceTree = "<group>"; };
 		C36F49A52AF8DE4C0056CCA7 /* DynamicFrameworkRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFrameworkRule.swift; sourceTree = "<group>"; };
-		C38105CD2716A9B1000459E1 /* JDAPPAnalyzeCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JDAPPAnalyzeCommand; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38F6CA3280925FD005512BF /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
 		C395A9E72B04A6190034B8E0 /* Punycode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punycode.swift; sourceTree = "<group>"; };
 		C395A9E82B04A6190034B8E0 /* String+Demange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Demange.swift"; sourceTree = "<group>"; };
@@ -248,15 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3DD287E2B04A6F5002BC5CD /* SwiftyJSON in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C38105CA2716A9B1000459E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C36F49DF2AF8DEA50056CCA7 /* APPAnalyzeCore.framework in Frameworks */,
-				C37E03592A495E1D004839BA /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +417,6 @@
 		C38105CE2716A9B1000459E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C38105CD2716A9B1000459E1 /* JDAPPAnalyzeCommand */,
 				C311A69E2A6A8B8300271609 /* APPAnalyzeCommand */,
 				C36F495B2AF8DE220056CCA7 /* APPAnalyzeCore.framework */,
 			);
@@ -584,28 +555,6 @@
 			productReference = C36F495B2AF8DE220056CCA7 /* APPAnalyzeCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C38105CC2716A9B1000459E1 /* JDAPPAnalyzeCommand */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C38105D42716A9B1000459E1 /* Build configuration list for PBXNativeTarget "JDAPPAnalyzeCommand" */;
-			buildPhases = (
-				C38105C92716A9B1000459E1 /* Sources */,
-				C38105CA2716A9B1000459E1 /* Frameworks */,
-				C38105CB2716A9B1000459E1 /* CopyFiles */,
-				C34E0A502B074B980004B92D /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C36F49E62AF8F2440056CCA7 /* PBXTargetDependency */,
-			);
-			name = JDAPPAnalyzeCommand;
-			packageProductDependencies = (
-				C37E03582A495E1D004839BA /* ArgumentParser */,
-			);
-			productName = BambooTool;
-			productReference = C38105CD2716A9B1000459E1 /* JDAPPAnalyzeCommand */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -621,10 +570,6 @@
 					C36F495A2AF8DE220056CCA7 = {
 						CreatedOnToolsVersion = 15.0;
 						LastSwiftMigration = 1500;
-					};
-					C38105CC2716A9B1000459E1 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -645,7 +590,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C38105CC2716A9B1000459E1 /* JDAPPAnalyzeCommand */,
 				C311A69D2A6A8B8300271609 /* APPAnalyzeCommand */,
 				C36F495A2AF8DE220056CCA7 /* APPAnalyzeCore */,
 			);
@@ -661,28 +605,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C34E0A502B074B980004B92D /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C311A69A2A6A8B8300271609 /* Sources */ = {
@@ -785,13 +707,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C38105C92716A9B1000459E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -799,11 +714,6 @@
 			isa = PBXTargetDependency;
 			target = C36F495A2AF8DE220056CCA7 /* APPAnalyzeCore */;
 			targetProxy = C36F49E32AF8F2400056CCA7 /* PBXContainerItemProxy */;
-		};
-		C36F49E62AF8F2440056CCA7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C36F495A2AF8DE220056CCA7 /* APPAnalyzeCore */;
-			targetProxy = C36F49E52AF8F2440056CCA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1034,63 +944,6 @@
 			};
 			name = Release;
 		};
-		C38105D52716A9B1000459E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_USE_OPTIMIZATION_PROFILE = YES;
-				CODE_SIGN_ENTITLEMENTS = JDAPPAnalyzeCommand/JDAPPAnalyzeCommand.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
-				EXCLUDED_ARCHS = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		C38105D62716A9B1000459E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_USE_OPTIMIZATION_PROFILE = YES;
-				CODE_SIGN_ENTITLEMENTS = JDAPPAnalyzeCommand/JDAPPAnalyzeCommand.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				EXCLUDED_ARCHS = "";
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1121,15 +974,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C38105D42716A9B1000459E1 /* Build configuration list for PBXNativeTarget "JDAPPAnalyzeCommand" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C38105D52716A9B1000459E1 /* Debug */,
-				C38105D62716A9B1000459E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1152,11 +996,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C37E03582A495E1D004839BA /* ArgumentParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C37E03572A495E1D004839BA /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
-			productName = ArgumentParser;
-		};
 		C3DD287D2B04A6F5002BC5CD /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C33D03192A5690E400A55E7B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
