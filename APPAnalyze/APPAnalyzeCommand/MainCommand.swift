@@ -1,6 +1,6 @@
 //
 //  MainCommand.swift
-//  BambooTool
+//  APPAnalyzeCommand
 //
 //  Created by hexiao on 2022/4/18.
 //
@@ -53,7 +53,7 @@ struct MainCommand: AsyncParsableCommand {
     mutating func run() async throws {
         let date = Date()
         #if DEBUG
-        CommandLine.arguments = ["/Users/hexiao/ibiu_project/JDLTAppModule/Example/TestOC", "-ipa", "/Users/hexiao/Desktop/ipas/pinduoduo/pinduoduo.app", "-config", "/Users/hexiao/Desktop/ipas/config.json", "--output", "/Users/hexiao/Desktop/ipas/pinduoduo2"]
+        CommandLine.arguments = ["/Users/hexiao/ibiu_project/test/Example/TestOC", "-ipa", "/Users/hexiao/Desktop/ipas/pinduoduo/pinduoduo.app", "-config", "/Users/hexiao/Desktop/ipas/config.json", "--output", "/Users/hexiao/Desktop/ipas/pinduoduo2"]
         #endif
         //
         log("执行参数：\(CommandLine.arguments)")

@@ -1,6 +1,6 @@
 //
 //  ModuleParser.swift
-//  JDAPPAnalyzeCommand
+//  APPAnalyzeCore
 //
 //  Created by hexiao on 2023/10/9.
 //
